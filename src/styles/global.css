@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@300;500&display=swap');
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content {
+  margin-left: 250px;
+  width: calc(100vw - 250px); 
+  min-height: 100vh;
+  transition: margin 0.3s ease, width 0.3s ease;
+  /* flex: 1;
+  min-width: 0; */
+}
+
+:root {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-primary: #c77dff;
+  --color-primary-light: #d192ff;
+  --color-primary-dark: #9d4edd;
+  --color-secondary: #3f1161;
+  --color-accent: #8c77bb;
+  --color-card-dark: #10092b;
+  --color-card-hover: #1a0f3a;
+  --color-text-muted: #e1d1ed;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* CUSTOM CURSOR */
+@media (hover: hover) and (pointer: fine) {
+
+  body.rocket-active,
+  body.rocket-active a,
+  body.rocket-active button,
+  body.rocket-active .btn-neon,
+  body.rocket-active .btn-neon-viaje {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  font-size: 24px;
+  color: var(--color-primary);
+  z-index: 10000;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  text-shadow: 0 0 10px var(--color-primary);
+  display: none;
+  transition: transform 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.smoke-particle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+
+  background: #c77dff;
+
+  box-shadow:
+    0 0 6px #c77dff,
+    0 0 12px #c77dff,
+    0 0 20px #9d4edd;
+}
+
+@keyframes smokeFade {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}
+
+/* FONDO */
+.principal {
+  background-image: url("/src/assets/img/fondo_espacio.png");
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.bienvenido-pill {
+  background: rgba(157, 78, 221, 0.2);
+  border: 1px solid var(--color-primary);
+  border-radius: 50px;
+  padding: 8px 25px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--color-text);
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.3);
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.titulo {
+  font-family: 'Michroma', cursive;
+  font-size: 50px;
+  color: var(--color-text);
+  text-shadow: 0 0 3px #c77dff, 0 0 6px rgba(196, 156, 228, 0.4);
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--color-text);
+  margin: 10px 0;
+}
+
+.letra-pintada {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--color-primary);
+}
+
+/* GRID EQUIPO - donde estan los integrantes */
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
+  gap: 35px;
+  margin: 80px 20px;
+  justify-content: center;
+}
+
+/* CARD COMPLETA */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(20, 10, 40, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(199, 125, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 45px rgba(199, 125, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(199, 125, 255, 0.5);
+}
+
+
+.card-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.card-img .face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #8c77bb;
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  transition: transform 0.6s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* astronauta visible al inicio */
+.card-img .front {
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+/* avatar oculto */
+.card-img .back {
+  transform: rotateY(180deg);
+}
+
+/* hover */
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+
+
+.card h3 {
+  margin: 20px 0 15px 0;
+  color: var(--color-text);
+  font-family: 'Michroma', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
+}
+
+/* BOTÓN PERFIL */
+.btn-neon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid #c77dff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 2px #c77dff, 0 0 5px #c77dff;
+}
+
+.btn-neon:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary), 0 0 40px rgba(199, 125, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* BOTÓN CENTRO */
+.boton-centro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0 60px 0;
+}
+
+/* BOTÓN VIAJE */
+.btn-neon-viaje {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 4px;
+  padding: 20px;
+  background: var(--color-card-dark);
+  color: var(--color-text-muted);
+  border: 1px solid #c77dff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 2px #c77dff, 0 0 5px #c77dff;
+}
+
+.btn-neon-viaje:hover {
+  background-color: var(--color-card-hover);
+  color: var(--color-text);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 0 6px #9d4edd;
+}
+
+/* BOTÓN VOLVER */
+.btn-volver-simple {
+    display: inline-flex; 
+    align-items: center;
+    gap: 8px;
+    color: #ccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none; 
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-volver-simple i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-volver-simple:hover {
+    color: var(--color-ligthblue);
+    text-shadow: 0 0 5px rgba(199, 125, 255, 0.4);
+}
+
+.btn-volver-simple:hover i {
+    transform: translateX(-4px); 
+}
+
+
+
+
+/* partículas */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.revelable {
+  visibility: visible;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+  background: rgba(16, 9, 43, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(199, 125, 255, 0.2);
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--color-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 10;
+  margin-left: 0;
+  width: 100%;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+.footer .logo-footer {
+  font-family: 'Michroma', sans-serif;
+  color: var(--color-primary);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: var(--color-primary);
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  text-shadow: 0 0 10px #ffffff;
+}
+
+
+/* ---RESPONSIVE DESIGN (Breakpoints Requeridos)--- */
+
+/* Escritorio grande (Máx 1200px) */
+@media screen and (max-width: 1200px) {
+    .seccion-home {
+        padding-top: 100px;
+    }
+    
+    .presentation-card {
+        width: 98%;
+    }
+    
+    .footer {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Tablets o pantallas medianas (Máx 900px) */
+@media screen and (max-width: 900px) {
+
+  .main-content {
+    margin-left: 0;
+    width: 100vw;
+    padding-top: 0;
+  }
+
+    .presentation-card {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(199, 125, 255, 0.2);
+        padding: 2rem 1.5rem;
+    }
+
+    .profile-details {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .contenedor-bitacora::after {
+        left: 50%;
+    }
+
+    .hito {
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        left: 0;
+    }
+
+    .hito-der {
+        left: 0%;
+    }
+
+    .hito-numero {
+        left: 10px !important;
+    }
+}
+
+/* Móviles pequeños (Máx 400px)*/
+@media screen and (max-width: 400px) {
+    /* Ajustes finos para pantallas muy chicas */
+    .profile-avatar-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .profile-name {
+        font-size: 1.4rem;
+    }
+
+    .detail-section h2 {
+        font-size: 1.1rem;
+    }
+
+}
