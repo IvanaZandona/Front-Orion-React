@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { FaHome, FaBook, FaUsers, FaBars, FaTimes } from "react-icons/fa";
+import { FaHome, FaBook, FaUsers, FaBars, FaTimes, FaImages } from "react-icons/fa";
 
 import "../../styles/sidebar.css";
 
@@ -13,7 +13,7 @@ function Sidebar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-<>
+    <>
       <button className={`hamburger-btn ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
@@ -34,10 +34,23 @@ function Sidebar() {
             <span>Bitácora</span>
           </NavLink>
 
-          <div className="nav-item disabled">
+          <NavLink to="/galeria" className="nav-item" onClick={closeMenu}>
+            <FaImages />
+            <span>Galería NASA</span>
+          </NavLink>
+
+          <NavLink to="/perfiles" className="nav-item disabled" onClick={closeMenu}>
             <FaUsers />
             <span>Perfiles</span>
-          </div>
+          </NavLink>
+
+
+          {/* <div className="nav-item disabled">
+            <FaUsers />
+            <span>Perfiles</span>
+          </div> */}
+
+
         </nav>
       </aside>
 
