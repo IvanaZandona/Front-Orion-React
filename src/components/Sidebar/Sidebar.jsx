@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { FaHome, FaBook, FaUsers, FaBars, FaTimes, FaImages } from "react-icons/fa";
-
-import "../../styles/sidebar.css";
+import { FaHome, FaBook, FaUsers, FaBars, FaTimes, FaImages, FaChevronDown, FaChevronUp, FaGithub, FaDiscord } from "react-icons/fa";
+import teamData from "../../data/teamData";
+import "./sidebar.css";
 
 function Sidebar() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isProfilesOpen, setIsProfilesOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+  const toggleProfiles = () => setIsProfilesOpen(!isProfilesOpen);
 
   return (
     <>
@@ -39,19 +41,39 @@ function Sidebar() {
             <span>Galería NASA</span>
           </NavLink>
 
-          <NavLink to="/perfiles" className="nav-item disabled" onClick={closeMenu}>
-            <FaUsers />
-            <span>Perfiles</span>
-          </NavLink>
+          {/* Menú Desplegable de Perfiles */}
+          <div className="nav-item-dropdown">
+            <div className="nav-item" onClick={toggleProfiles} style={{ cursor: "pointer", justifyContent: "space-between" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                <FaUsers />
+                <span>Perfiles</span>
+              </div>
+              {isProfilesOpen ? <FaChevronUp size={12} /> : <FaChevronDown size={12} />}
+            </div>
 
-
-          {/* <div className="nav-item disabled">
-            <FaUsers />
-            <span>Perfiles</span>
-          </div> */}
-
-
+            {isProfilesOpen && (
+              <div className="sub-menu">
+                {teamData.map((member) => (
+                  <NavLink key={member.id} to={`/perfiles/${member.id}`} className="nav-item sub-item" onClick={closeMenu}>
+                    <span>{member.apodo}</span>
+                  </NavLink>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
+
+        <div className="sidebar-footer">
+          <div className="sidebar-socials">
+            <a href="https://github.com/mariaayelen/Front-Orion" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="#">
+              <FaDiscord />
+            </a>
+          </div>
+          <p>&copy; 2026 Equipo Orión.</p>
+        </div>
       </aside>
 
       {isOpen && <div className="sidebar-overlay" onClick={closeMenu}></div>}

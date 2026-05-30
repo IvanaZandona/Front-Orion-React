@@ -4,6 +4,7 @@ import DashboardLayout from "./layouts/DashboardLayout";
 import Home from "./pages/Home";
 import Bitacora from "./pages/Bitacora";
 import Galeria from "./pages/Galeria";
+import Perfiles from "./components/Perfiles/Perfiles";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="bitacora" element={<Bitacora />} />
         <Route path="galeria" element={<Galeria />} />
+        <Route path="perfiles/:id" element={<Perfiles />} />
       </Route>
     </Routes>
   );

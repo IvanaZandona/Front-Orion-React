@@ -2,7 +2,6 @@ import HeroSection from "../components/HeroSection/HeroSection";
 
 import TeamGrid from "../components/TeamCard/TeamGrid";
 
-import Footer from "../components/Footer/Footer";
 
 import useRocketCursor from "../hooks/useRocketCursor";
 
@@ -25,7 +24,6 @@ function Home() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

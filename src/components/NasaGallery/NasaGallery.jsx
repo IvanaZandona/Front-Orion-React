@@ -8,7 +8,9 @@ import "yet-another-react-lightbox/styles.css";
 
 import { fetchNasaImages } from "../../services/nasaApi";
 
-import "../../styles/nasaGallery.css";
+import Loader from "../Loader/Loader";
+
+import "./nasaGallery.css";
 
 function NasaGallery() {
 
@@ -59,11 +61,7 @@ function NasaGallery() {
   }, [page]);
 
   if (loading) {
-    return (
-      <p className="gallery-message">
-        Cargando imágenes...
-      </p>
-    );
+    return <Loader  />;
   }
 
   if (error) {
@@ -176,8 +174,11 @@ function NasaGallery() {
             behavior: "smooth",
           })
         }
+        aria-label="Volver arriba"
       >
-        ↑
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
       </button>
 
       <Lightbox
