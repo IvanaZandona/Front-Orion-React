@@ -135,10 +135,15 @@ src/
 ### Funcionalidades implementadas en js o animaciones
 
 - Cursor personalizado con efecto de cohete y seguimiento del mouse en la página principal. También se agregó una sección principal con carrusel de equipo y botón de inicio del recorrido que activa el cohete.
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/14bbe5b8-6743-4fe7-9514-a176093415eb" />
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/14bbe5b8-6743-4fe7-9514-a176093415eb" width="500" />
+</p> 
 
 - Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
-  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/ccdb43a1-ef8b-4b3b-93db-9f9878c596d1" />
+  <p align="left">
+  <img src="https://github.com/user-attachments/assets/ccdb43a1-ef8b-4b3b-93db-9f9878c596d1" width="500" />
+</p> 
+
 
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
