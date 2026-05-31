@@ -146,21 +146,22 @@ src/
 
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
+
+- Buscador en tiempo real en el explorador de cuerpos celestes.
  <p align="left">
 <img alt="image" src="https://github.com/user-attachments/assets/2db12b1e-c7e3-4200-9c5d-047859e1d85c" width="400" />
 </p> 
-- Buscador en tiempo real en el explorador de cuerpos celestes.
-
 
 - Menú lateral responsive con submenú desplegable de perfiles.
-
+ <p align="left">
+  <img alt="image" src="https://github.com/user-attachments/assets/0bb80ea6-896b-4dad-931e-4fd683ae1caf" width="400" />
+</p> 
 
 - Animaciones de hover y glow en tarjetas, botones e íconos.
 - Navegación de perfiles dinámica basada en `teamData.js`. En la sección de perfiles también se agregó el apartado de habilidades con barras de progreso. Se mantuvieron los efectos de fondo en las tarjetas de perfil y el efecto de iluminación en los botones e íconos al pasar el mouse.
-<p align="left">
-  <img src="image" src="[https://github.com/user-attachments/assets/21ac0852-69da-4d0d-8b7b-51132bdffb5a](https://github.com/user-attachments/assets/7421c9ac-3012-4c48-96bc-b5d4199e9af6)" width="400"  />
-</p>
-
+ <p align="left">
+<img alt="image" src="https://github.com/user-attachments/assets/b68e06c0-4fa0-4898-b42c-5a4958f5a632" width="400"/>
+</p> 
 ## Cómo ejecutar el proyecto
 
 1. Instalar dependencias:
