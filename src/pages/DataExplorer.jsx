@@ -7,7 +7,7 @@ import './dataExplorer.css';
 function DataExplorer() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Lógica de filtrado en tiempo real
+  
   const filteredPlanets = dataPlanet.filter(planet =>
     planet.nombre.toLowerCase().includes(searchTerm.toLowerCase()) ||
     planet.categoria.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -15,15 +15,15 @@ function DataExplorer() {
   );
 
   const handleImageError = (e) => {
-    e.target.style.display = 'none'; // Oculta la imagen rota
-    e.target.nextSibling.style.display = 'flex'; // Muestra el contenedor de fallback
+    e.target.style.display = 'none'; // 
+    e.target.nextSibling.style.display = 'flex'; 
   };
 
   return (
     <div className="explorer-container">
       <div className="explorer-header">
-        <h1 className="explorer-title">Explorador de Cuerpos Celestes </h1>
-        <p>Los 20 planetas y cuerpos celestes mas cercanos a la Tierra.</p>
+        <h1 className="explorer-title">Explorador de Cuerpos Celestes</h1>
+        <p>Los 20 planetas y cuerpos celestes más cercanos a la Tierra.</p>
         
         <input 
           type="text" 
@@ -38,18 +38,30 @@ function DataExplorer() {
         {filteredPlanets.length > 0 ? (
           filteredPlanets.map(item => (
             <div key={item.id} className="data-card">
-              <div className="data-card-image-container">
+              
+             
+              <div className="data-card-image-wrapper">
+                <div 
+                  className="data-card-planetary-bg"
+                  style={{ backgroundImage: `url('${item.urlImagen}')` }}
+                />
+                
+                
                 <img 
                   src={item.urlImagen} 
                   alt={item.nombre} 
                   onError={handleImageError}
-                  className="data-card-image"
+                  style={{ display: 'none' }} 
                 />
-                <div className="data-card-fallback">
+                
+                
+                <div className="data-card-fallback" style={{ display: 'none' }}>
                    <FaImage size={40} className="data-card-fallback-icon" />
                    <span className="data-card-fallback-text">No Image Available</span>
                 </div>
               </div>
+
+      
               <div className="data-card-content">
                 <h3>{item.nombre}</h3>
                 <div className="data-details">

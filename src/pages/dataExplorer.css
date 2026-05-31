@@ -150,3 +150,34 @@
   color: var(--color-primary-light);
   padding: 2rem;
 }
+
+
+
+/* --- EFECTO CINEMATOGRÁFICO PLANETARIO --- */
+
+.data-card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 200px; /* Ajustalo a la altura que venían usando */
+  width: 100%;
+  border: 1px solid transparent;
+  transition: border 1s ease;
+}
+
+.data-card-planetary-bg {
+  position: absolute;
+  inset: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%; /* Tamaño inicial */
+  transition: background-size 0.8s ease, background-position 0.8s ease;
+}
+
+/* Cuando pasamos el mouse por encima de la TARJETA, la imagen interna reacciona */
+
+
+.data-card:hover .data-card-planetary-bg {
+  background-size: 160%; /* Hace el zoom al planeta */
+  background-position: left center; /* Se desplaza hacia la izquierda */
+}

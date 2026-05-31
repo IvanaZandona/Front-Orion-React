@@ -139,12 +139,20 @@ src/
 - Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
+<<<<<<< Updated upstream
 - Buscador en tiempo real en el explorador de cuerpos celestes.
+=======
+- Buscador en tiempo real en el explorador de cuerpos celestes
+>>>>>>> Stashed changes
 - Menú lateral responsive con submenú desplegable de perfiles.
 - Animaciones de hover y glow en tarjetas, botones e íconos.
 - Navegación de perfiles dinámica basada en `teamData.js`. En la sección de perfiles también se agregó el apartado de habilidades con barras de progreso. Se mantuvieron los efectos de fondo en las tarjetas de perfil y el efecto de iluminación en los botones e íconos al pasar el mouse.
 
+<<<<<<< Updated upstream
 ### Cómo ejecutar el proyecto
+=======
+## Cómo ejecutar el proyecto
+>>>>>>> Stashed changes
 
 1. Instalar dependencias:
    ```bash
@@ -183,7 +191,9 @@ src/
 
 <div style="overflow:auto;">
   <img src="public/assets/img/readme/readme_exp.png" alt="Página explorador" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
-  <p><strong>Página explorador:</strong> buscador de objetos espaciales en tiempo real. Tiene filtros, resultados dinámicos y muestra datos de la NASA.</p>
+  <div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_efzoom.png" alt="Página explorador zoom" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página explorador:</strong> buscador de objetos espaciales en tiempo real. Tiene filtros, resultados dinámicos y muestra datos de la NASA. Se implementó un efecto dinámico de paneo y zoom utilizando propiedades nativas de CSS combinadas con el renderizado de React. Al interactuar con la tarjeta de un planeta, la imagen de fondo realiza una transición simulando un acercamiento de cámara espacial.</p>
 </div>
 
 <div style="overflow:auto;">

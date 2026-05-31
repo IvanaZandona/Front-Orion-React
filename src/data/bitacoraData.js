@@ -18,7 +18,7 @@ const bitacoraData = [
     id: 2,
     numeroHito: 2,
     titulo: "Definiendo nuestra constelación",
-    descripcion: "Con el rumbo ya definido comenzamos a darle forma a la identidad del equipo.",
+    descripcion: "Con el rumbo ya definido, dimos el siguiente paso: empezar a darle forma a lo que íbamos a ser como equipo. Nos enfocamos en pensar el eje del proyecto, elegir un nombre y definir una estética que realmente nos represente. Elegimos Orión, inspirado en la constelación. Nos gustó porque sentimos que nos representaba bastante: cada una como una estrella, con lo suyo, pero entendiendo que es cuando nos juntamos que realmente se arma algo más grande.",
     imagen: "/assets/img/logo.png",
     aspectosTecnicos: ["Branding visual", "Tipografía", "Paleta de colores", "Prototipo UI"]
   },
@@ -26,7 +26,7 @@ const bitacoraData = [
     id: 3,
     numeroHito: 3,
     titulo: "Primeros trazos del diseño",
-    descripcion: "Con la identidad definida, realizamos un primer maquetado para organizar las ideas.",
+    descripcion: "Realizamos un primer maquetado para organizar las ideas. Utilizamos herramientas simples para visualizar cómo sería la estructura de la página, priorizando una estética clara y ordenada.",
     imagen: "/assets/img/codigo.png",
     aspectosTecnicos: ["Diseño preliminar en Canva", "Definición de estructura de navegación", "Organización inicial de secciones", "Selección de paleta de colores"]
   },
@@ -34,7 +34,7 @@ const bitacoraData = [
     id: 4,
     numeroHito: 4,
     titulo: "Construcción compartida",
-    descripcion: "Con la base visual ya definida, el proyecto comenzó a construirse de manera colaborativa.",
+    descripcion: "A medida que avanzábamos, el proyecto se convirtió en un verdadero trabajo colaborativo. Cada integrante aportó ideas, realizó ajustes y participó en distintas partes del desarrollo, desde el código hasta el diseño.",
     imagen: null,
     aspectosTecnicos: ["Unificación de criterios visuales", "Definición de componentes y secciones", "Maquetación inicial utilizando HTML y CSS", "Organización de recursos gráficos e imágenes"]
   },
@@ -50,7 +50,7 @@ const bitacoraData = [
     id: 6,
     numeroHito: 6,
     titulo: "Refinamiento y ajustes",
-    descripcion: "A medida que el proyecto fue creciendo, comenzamos a detectar diferencias en la visualización entre distintos dispositivos y resoluciones.",
+    descripcion: "A medida que el proyecto fue creciendo, comenzamos a detectar diferencias en la visualización entre distintos dispositivos y resoluciones. Le dijimos adiós a secciones innecesarias para quedarnos con lo esencial: una página de inicio fuerte y una bitácora funcional.",
     imagen: null,
     aspectosTecnicos: ["Implementación de diseño responsive", "Corrección de problemas de overflow", "Ajuste de márgenes y paddings", "Revisión de z-index y capas"]
   },
@@ -58,7 +58,7 @@ const bitacoraData = [
     id: 7,
     numeroHito: 7,
     titulo: "Ajustes, decisiones y desafíos",
-    descripcion: "Trabajar con imágenes de fondo y lograr la estética deseada nos llevó tiempo y pruebas.",
+    descripcion: "Trabajar con imágenes de fondo y lograr la estética deseada nos llevó tiempo y pruebas. Sin embargo, el trabajo en equipo fue fundamental para resolver cada inconveniente.",
     imagen: null,
     aspectosTecnicos: ["Optimización de animaciones CSS y JS", "Resolución de problemas generales", "Corrección de eventos interactivos", "Organización y limpieza del código"]
   },
