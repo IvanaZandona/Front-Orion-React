@@ -6,6 +6,7 @@ Aplicación web de presentación y bitácora del Equipo Orión, desarrollada en 
 
 El sitio combina una estética espacial con colores oscuros, tipografías modernas, animaciones suaves y secciones interactivas para mostrar la identidad del equipo, su bitácora de desarrollo, una galería NASA y perfiles de integrantes.
 
+
 ## Objetivos del proyecto
 
 - Mostrar la identidad del equipo en una experiencia visual moderna.
@@ -127,11 +128,33 @@ src/
 - `pnpm preview` — Sirve la build de producción localmente.
 - `pnpm lint` — Ejecuta ESLint.
 
-## Buenas prácticas del proyecto
+## Documentación visual
 
-- Mantener la estructura de archivos clara: páginas en `src/pages`, componentes en `src/components`.
-- Usar rutas relativas correctas para CSS e imágenes.
-- No modificar la lógica de rutas de React Router sin validar la app.
+<div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_inicio.png" alt="Página de inicio" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página de inicio:</strong> es la sección principal del proyecto, con menú lateral, hero del espacio y carrusel de integrantes. Ahí armamos la navegación inicial y algunos efectos para dar la primera impresión del sitio.</p>
+</div>
+
+<div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_bit1.png" alt="Página bitácora - parte 1" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <img src="public/assets/img/readme/readme_bit2.png" alt="Página bitácora - parte 2" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página bitácora:</strong> es una línea de tiempo con todo el desarrollo del proyecto. Se hicieron animaciones, render dinámico con datos y un zoom para ver mejor las imágenes.</p>
+</div>
+
+<div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_perfil.png" alt="Página de perfiles" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página de perfiles:</strong> muestra los integrantes en tarjetas con efectos al pasar el mouse. Los datos vienen de `teamData.js` e incluyen habilidades y navegación.</p>
+</div>
+
+<div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_exp.png" alt="Página explorador" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página explorador:</strong> buscador de objetos espaciales en tiempo real. Tiene filtros, resultados dinámicos y muestra datos de la NASA.</p>
+</div>
+
+<div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_galeria.png" alt="Página galería" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página galería:</strong> muestra imágenes del espacio de la NASA. Tiene paginación, consumo de API y opción de ver las imágenes en grande.</p>
+</div>
 
 ## Notas adicionales
 
