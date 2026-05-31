@@ -4,7 +4,7 @@
 
 Aplicación web de presentación y bitácora del Equipo Orión, desarrollada en React con Vite como trabajo práctico para la Tecnicatura en Desarrollo de Software.
 
-El sitio combina una estética espacial con colores oscuros, tipografías modernas, animaciones suaves y secciones interactivas para mostrar la identidad del equipo, su bitácora de desarrollo, una galería NASA y perfiles de integrantes.
+El sitio combina una estética espacial con colores oscuros, tipografías modernas, animaciones suaves y secciones interactivas para mostrar la identidad del equipo, nuestra bitácora de desarrollo, una galería NASA y perfiles de integrantes.
 
 
 ## Objetivos del proyecto
