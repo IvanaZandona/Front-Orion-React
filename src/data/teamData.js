@@ -74,21 +74,25 @@ const teamData = [
     },
     habilidades: [
       { nombre: "C#", icono: "/assets/img/yahir/imageskills/csharp.svg" },
-      { nombre: "Python", icono: "/assets/img/yahir/imageskills/python.svg" },
+      { nombre: "C", icono: "/assets/img/yahir/imageskills/C_Logo.png" },
       { nombre: "Kotlin", icono: "/assets/img/yahir/imageskills/kotlin.svg" },
-      { nombre: "SQLite", icono: "/assets/img/yahir/imageskills/sqlite.svg" }
+      { nombre: "Blender", icono: "/assets/img/yahir/imageskills/Blender.png" },
+      { nombre: "Adobe Photoshop", icono: "/assets/img/yahir/imageskills/photoshop.png" },
     ],
     peliculasFavoritas: [
-      { titulo: "Guerra Mundial Z", imagen: "/assets/img/yahir/imgPeli/guerraZ.jpg" },
-      { titulo: "Harry Potter", imagen: "/assets/img/yahir/imgPeli/harryPotter.jpg" },
-      { titulo: "La Razón de Estar Contigo", imagen: "/assets/img/yahir/imgPeli/larazondeestar.jpg" }
+      { titulo: "La Lista de Schindler", imagen: "/assets/img/yahir/imgPeli/schindler.jpg" },
+      { titulo: "Pulp Fiction", imagen: "/assets/img/yahir/imgPeli/pulpfiction.jpg" },
+      { titulo: "Interstellar", imagen: "/assets/img/yahir/imgPeli/interstellar.jpg" }
     ],
     discosFavoritos: [
-      { titulo: "Avanti Morocha", imagen: "/assets/img/yahir/music/avantiMorocha.jpg" },
-      { titulo: "Desire", imagen: "/assets/img/yahir/music/desire.jpg" },
-      { titulo: "Safe and Sound", imagen: "/assets/img/yahir/music/safesound.jpg" }
-    ]
-
+      { titulo: "Blood Sugar Sex Magik", imagen: "/assets/img/yahir/music/bssm.webp" },
+      { titulo: "Van Halen I", imagen: "/assets/img/yahir/music/vanhalen.jpg" },
+      { titulo: "Thriller", imagen: "/assets/img/yahir/music/thriller.jpg" },
+      { titulo: "Parachutes", imagen: "/assets/img/yahir/music/parachutes.jpg" },
+      { titulo: "The Marshall Mathers LP", imagen: "/assets/img/yahir/music/marshallmathers.png" },
+      { titulo: "Operation: Doomsday", imagen: "/assets/img/yahir/music/doomsday.webp" },
+    ],
+  
   },
   {
     id: 4,
