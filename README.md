@@ -134,14 +134,28 @@ src/
 
 ### Funcionalidades implementadas en js o animaciones
 
-- Cursor personalizado con efecto de cohete y seguimiento del mouse en la página principal.
+- Cursor personalizado con efecto de cohete y seguimiento del mouse en la página principal. También se agregó una sección principal con carrusel de equipo y botón de inicio del recorrido que activa el cohete.
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/14bbe5b8-6743-4fe7-9514-a176093415eb" />
+
 - Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/ccdb43a1-ef8b-4b3b-93db-9f9878c596d1" />
+
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/0058fb78-4bc1-44df-a8ee-599f952ca29e" />
+
 - Buscador en tiempo real en el explorador de cuerpos celestes.
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/414f0a8e-2af2-45d0-92bc-c224b4631dd5" />
+
 - Menú lateral responsive con submenú desplegable de perfiles.
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/779095d7-f7a4-4339-8411-3676485236b8" />
+
 - Animaciones de hover y glow en tarjetas, botones e íconos.
-- Navegación de perfiles dinámica basada en `teamData.js`.
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/2bbf6c6b-b2c4-48f7-be8c-23dafed8ecf5" />
+
+- Navegación de perfiles dinámica basada en `teamData.js`. En la sección de perfiles también se agregó el apartado de habilidades con barras de progreso. Se mantuvieron los efectos de fondo en las tarjetas de perfil y el efecto de iluminación en los botones e íconos al pasar el mouse.
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/21ac0852-69da-4d0d-8b7b-51132bdffb5a" />
+
 
 ## Cómo ejecutar el proyecto
 
