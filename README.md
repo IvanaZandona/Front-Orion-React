@@ -146,18 +146,13 @@ src/
 
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/0058fb78-4bc1-44df-a8ee-599f952ca29e" width="400" />
+ <p align="left">
+<img alt="image" src="https://github.com/user-attachments/assets/2db12b1e-c7e3-4200-9c5d-047859e1d85c" width="400" />
 </p> 
 - Buscador en tiempo real en el explorador de cuerpos celestes.
-<p align="left">
-  <img src="image" src="https://github.com/user-attachments/assets/414f0a8e-2af2-45d0-92bc-c224b4631dd5" width="400"  />
-</p> 
+
 
 - Menú lateral responsive con submenú desplegable de perfiles.
-<p align="left">
-  <img src="image" alt="Captura de pantalla 2026-05-31 174441" src="https://github.com/user-attachments/assets/f2de44c6-aa54-425e-b783-3643e4ebac5d" width="400"  />
-</p> 
 
 
 - Animaciones de hover y glow en tarjetas, botones e íconos.
