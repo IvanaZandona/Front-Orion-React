@@ -1,6 +1,10 @@
-function TeamCard({ name, avatar, frontImage }) {
+import { useNavigate } from "react-router-dom";
+
+function TeamCard({ id, name, avatar, frontImage }) {
+  const navigate = useNavigate();
+
   return (
-    <div className="card">
+    <div className="card" onClick={() => navigate(`/perfiles/${id}`)}>
       <div className="card-img">
 
         <div className="face front">

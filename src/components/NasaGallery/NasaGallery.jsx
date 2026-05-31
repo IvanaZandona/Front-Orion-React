@@ -10,6 +10,8 @@ import { fetchNasaImages } from "../../services/nasaApi";
 
 import Loader from "../Loader/Loader";
 
+import ScrollTopBtn from "../ScrollTopBtn/ScrollTopBtn";
+
 import "./nasaGallery.css";
 
 function NasaGallery() {
@@ -166,21 +168,7 @@ function NasaGallery() {
 
       </div>
 
-      <button
-        className="scroll-top-btn"
-        onClick={() =>
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          })
-        }
-        aria-label="Volver arriba"
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
-      </button>
-
+     
       <Lightbox
         open={open}
         close={() => setOpen(false)}
@@ -188,6 +176,8 @@ function NasaGallery() {
         index={index}
         plugins={[Zoom]}
       />
+
+      <ScrollTopBtn />
 
     </section>
   );

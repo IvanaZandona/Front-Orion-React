@@ -1,7 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
+import ProjectCarousel from "../ProjectCarousel/ProjectCarousel";
 
 import './styles.css'; 
+
+function SkillProgressBar({ hab }) {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    // Animación de llenado con delay corto
+    setTimeout(() => {
+      setWidth(hab.nivel || 0);
+    }, 100);
+  }, [hab]);
+
+  return (
+    <div className="skill-bar-container">
+      <div className="skill-info">
+        <span className="skill-name">
+          <img src={hab.icono} alt={hab.nombre} className="skill-icon-small" /> {hab.nombre}
+        </span>
+        <span className="skill-percentage">{width}%</span>
+      </div>
+      <div className="skill-progress-bg">
+        <div className="skill-progress-fill" style={{ width: `${width}%` }}></div>
+      </div>
+    </div>
+  );
+}
+
 function ProfileCard({
   apodo,
   nombre,
@@ -11,6 +38,7 @@ function ProfileCard({
   edad,
   redes,
   habilidades,
+  proyectos,
   peliculasFavoritas,
   discosFavoritos,
   onGravityToggle
@@ -71,19 +99,24 @@ function ProfileCard({
         </div>
       </div>
 
-      {/* Row 2: Detalles (Habilidades, Películas, Discos) */}
+      {/* Row 2: Detalles (Habilidades, Proyectos, Películas, Discos) */}
       <div className="profile-details">
         
         {habilidades && habilidades.length > 0 && (
           <div className="detail-section">
             <h2><i className="fa-solid fa-code"></i> Habilidades</h2>
-            <div className="badges-container">
+            <div className="skills-bars-container">
               {habilidades.map((hab, index) => (
-                <span key={index} className="badge-skill">
-                  <img src={hab.icono} alt={hab.nombre} /> {hab.nombre}
-                </span>
+                <SkillProgressBar key={index} hab={hab} />
               ))}
             </div>
+          </div>
+        )}
+
+        {proyectos && proyectos.length > 0 && (
+          <div className="detail-section">
+            <h2><i className="fa-solid fa-rocket"></i> Proyectos Destacados</h2>
+            <ProjectCarousel proyectos={proyectos} />
           </div>
         )}
 

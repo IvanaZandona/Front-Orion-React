@@ -1,6 +1,6 @@
 import HeroSection from "../components/HeroSection/HeroSection";
 
-import TeamGrid from "../components/TeamCard/TeamGrid";
+import TeamCarousel from "../components/TeamCard/TeamCarousel";
 
 
 import useRocketCursor from "../hooks/useRocketCursor";
@@ -13,9 +13,7 @@ function Home() {
     <>
       <section className="principal">
         <HeroSection />
-
-        <TeamGrid />
-
+        <TeamCarousel />
         <div className="boton-centro">
           <button className="btn-neon-viaje">
             <i className="fa-solid fa-rocket"></i>

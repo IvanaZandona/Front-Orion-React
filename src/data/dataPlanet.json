@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luna",
+    "categoria": "Satélite",
+    "sistemaEstelar": "Sistema Solar",
+    "distanciaTexto": "384.400 km",
+    "distanciaAniosLuz": 0.00000004,
+    "potencialmenteHabitable": false,
+    "descripcion": "El único satélite natural de la Tierra y el único cuerpo celeste que el ser humano ha pisado.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Venus",
+    "categoria": "Planeta",
+    "sistemaEstelar": "Sistema Solar",
+    "distanciaTexto": "41.000.000 km",
+    "distanciaAniosLuz": 0.0000043,
+    "potencialmenteHabitable": false,
+    "descripcion": "El planeta más cálido del Sistema Solar debido a su densa atmósfera tóxica que genera un efecto invernadero extremo.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Marte",
+    "categoria": "Planeta",
+    "sistemaEstelar": "Sistema Solar",
+    "distanciaTexto": "78.000.000 km",
+    "distanciaAniosLuz": 0.0000082,
+    "potencialmenteHabitable": false,
+    "descripcion": "Conocido como el planeta rojo. Tiene el volcán más grande del Sistema Solar y evidencia de que alguna vez albergó agua líquida.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Mercurio",
+    "categoria": "Planeta",
+    "sistemaEstelar": "Sistema Solar",
+    "distanciaTexto": "91.000.000 km",
+    "distanciaAniosLuz": 0.0000096,
+    "potencialmenteHabitable": false,
+    "descripcion": "El planeta más pequeño y cercano al Sol. Carece de atmósfera significativa, lo que provoca cambios drásticos de temperatura.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Júpiter",
+    "categoria": "Planeta",
+    "sistemaEstelar": "Sistema Solar",
+    "distanciaTexto": "628.000.000 km",
+    "distanciaAniosLuz": 0.000066,
+    "potencialmenteHabitable": false,
+    "descripcion": "Un gigante gaseoso inmenso. Su icónica Gran Mancha Roja es una tormenta que lleva activa cientos de años.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Jupiter.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Europa",
+    "categoria": "Satélite",
+    "sistemaEstelar": "Sistema Solar (Júpiter)",
+    "distanciaTexto": "628.000.000 km",
+    "distanciaAniosLuz": 0.000066,
+    "potencialmenteHabitable": true,
+    "descripcion": "Una de las lunas de Júpiter. Se cree que oculta un vasto océano de agua salada bajo su corteza de hielo.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/5/54/Europa-discovery.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Saturno",
+    "categoria": "Planeta",
+    "sistemaEstelar": "Sistema Solar",
+    "distanciaTexto": "1.200.000.000 km",
+    "distanciaAniosLuz": 0.000127,
+    "potencialmenteHabitable": false,
+    "descripcion": "Famoso por su complejo y espectacular sistema de anillos compuestos principalmente de hielo y roca.",
+    "urlImagen": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Titán",
+    "categoria": "Satélite",
+    "sistemaEstelar": "Sistema Solar (Saturno)",
+    "distanciaTexto": "1.200.000.000 km",
+    "distanciaAniosLuz": 0.000127,
+    "potencialmenteHabitable": false,
+    "descripcion": "La luna más grande de Saturno. Es el único satélite con una atmósfera densa y lagos de metano líquido en su superficie.",
+    "urlImagen": "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "nombre": "Encélado",
+    "categoria": "Satélite",
+    "sistemaEstelar": "Sistema Solar (Saturno)",
+    "distanciaTexto": "1.200.000.000 km",
+    "distanciaAniosLuz": 0.000127,
+    "potencialmenteHabitable": true,
+    "descripcion": "Pequeña luna helada de Saturno que expulsa géiseres de agua al espacio, indicando actividad hidrotérmica subterránea.",
+    "urlImagen": "https://images.unsplash.com/photo-1614729939124-03290b5609ce?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "nombre": "Próxima Centauri b",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Próxima Centauri",
+    "distanciaTexto": "4,24 Años Luz",
+    "distanciaAniosLuz": 4.24,
+    "potencialmenteHabitable": true,
+    "descripcion": "El exoplaneta más cercano a la Tierra. Tiene un tamaño similar al nuestro y orbita en la zona habitable de su estrella.",
+    "urlImagen": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 11,
+    "nombre": "Próxima Centauri c",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Próxima Centauri",
+    "distanciaTexto": "4,24 Años Luz",
+    "distanciaAniosLuz": 4.24,
+    "potencialmenteHabitable": false,
+    "descripcion": "Un exoplaneta más lejano y frío en el sistema más cercano al Sol. Podría ser una súper-Tierra o un mini-Neptuno.",
+    "urlImagen": "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 12,
+    "nombre": "Estrella de Barnard b",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Estrella de Barnard",
+    "distanciaTexto": "5,96 Años Luz",
+    "distanciaAniosLuz": 5.96,
+    "potencialmenteHabitable": false,
+    "descripcion": "Un exoplaneta helado y oscuro que orbita la segunda estrella más cercana al Sistema Solar.",
+    "urlImagen": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 13,
+    "nombre": "Epsilon Eridani b",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Epsilon Eridani",
+    "distanciaTexto": "10,50 Años Luz",
+    "distanciaAniosLuz": 10.50,
+    "potencialmenteHabitable": false,
+    "descripcion": "Un gigante gaseoso similar a Júpiter que orbita una estrella joven, rodeado de un gran cinturón de asteroides.",
+    "urlImagen": "https://images.unsplash.com/photo-1630694093867-4b947d812bf0?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 14,
+    "nombre": "Ross 128 b",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Ross 128",
+    "distanciaTexto": "11,03 Años Luz",
+    "distanciaAniosLuz": 11.03,
+    "potencialmenteHabitable": true,
+    "descripcion": "Un exoplaneta del tamaño de la Tierra que orbita una enana roja inactiva, lo que lo protege de erupciones solares letales.",
+    "urlImagen": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 15,
+    "nombre": "Tau Ceti e",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Tau Ceti",
+    "distanciaTexto": "11,90 Años Luz",
+    "distanciaAniosLuz": 11.90,
+    "potencialmenteHabitable": true,
+    "descripcion": "Posible planeta rocoso en el borde interior de la zona habitable de una estrella muy parecida a nuestro Sol.",
+    "urlImagen": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 16,
+    "nombre": "Tau Ceti f",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Tau Ceti",
+    "distanciaTexto": "11,90 Años Luz",
+    "distanciaAniosLuz": 11.90,
+    "potencialmenteHabitable": true,
+    "descripcion": "Una súper-Tierra ubicada en el límite exterior de la zona habitable de su sistema estelar.",
+    "urlImagen": "https://images.unsplash.com/photo-1543722530-d2c3201371e7?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 17,
+    "nombre": "Luyten b",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Estrella de Luyten",
+    "distanciaTexto": "12,20 Años Luz",
+    "distanciaAniosLuz": 12.20,
+    "potencialmenteHabitable": true,
+    "descripcion": "Un planeta rocoso potencialmente habitable a 'solo' 12 años luz. Se le han enviado mensajes de radio desde la Tierra.",
+    "urlImagen": "https://images.unsplash.com/photo-1419242902214-272b3f66ce7a?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 18,
+    "nombre": "Estrella de Teegarden b",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Estrella de Teegarden",
+    "distanciaTexto": "12,50 Años Luz",
+    "distanciaAniosLuz": 12.50,
+    "potencialmenteHabitable": true,
+    "descripcion": "Tiene una masa casi idéntica a la de la Tierra y un alto índice de similitud, siendo uno de los mejores candidatos para albergar vida.",
+    "urlImagen": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 19,
+    "nombre": "Estrella de Teegarden c",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Estrella de Teegarden",
+    "distanciaTexto": "12,50 Años Luz",
+    "distanciaAniosLuz": 12.50,
+    "potencialmenteHabitable": true,
+    "descripcion": "El hermano exterior de Teegarden b. Es un poco más frío y tendría un clima similar al de Marte en sus orígenes.",
+    "urlImagen": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 20,
+    "nombre": "Wolf 1061 c",
+    "categoria": "Exoplaneta",
+    "sistemaEstelar": "Wolf 1061",
+    "distanciaTexto": "13,80 Años Luz",
+    "distanciaAniosLuz": 13.80,
+    "potencialmenteHabitable": true,
+    "descripcion": "Una súper-Tierra rocosa. Su cercanía a su estrella sugiere que podría tener un lado perpetuamente de día y otro de noche.",
+    "urlImagen": "https://images.unsplash.com/photo-1618055615715-674483a3036c?auto=format&fit=crop&w=800&q=80"
+  }
+]
