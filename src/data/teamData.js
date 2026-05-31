@@ -149,9 +149,9 @@ const teamData = [
   {
     id: 5,
     apodo: "Ivana",
-    nombre: "Ivana",
+    nombre: "Ivana Maribel Zandoná",
   
-rol: "RPA and Full Stack Developer",
+    rol: "RPA and Full Stack Developer",
     ubicacion: "Rosario, Argentina",
     edad: 22,
       avatar: "/assets/img/avatar_ivana.png",
@@ -168,9 +168,27 @@ rol: "RPA and Full Stack Developer",
       { nombre: "CSS", icono: "/assets/img/ivana/imageSkills/css.svg", nivel: 90 }
     ],
     proyectos: [
-      { titulo: "Bot Explorador", descripcion: "Automatización de recolección de datos.", imagen: "/assets/img/1.webp" },
-      { titulo: "Sistema de Inventario", descripcion: "Gestión de suministros en la nave.", imagen: "/assets/img/astronauta2.webp" },
-      { titulo: "Dashboard de Energía", descripcion: "Monitoreo en tiempo real de recursos.", imagen: "/assets/img/1.webp" }
+      {
+        titulo: "Automatización RPA",
+        descripcion: "Bots de automatización para procesamiento y validación de datos con BluePrism.",
+        imagen: "/assets/img/ivana/proyectos/rpa.jpg"
+      },
+      { 
+        titulo: "Sitio Web de E-commerce", 
+        descripcion: "Diseño y desarrollo de sitio web estático E-commerce 'Roll Argent', utilizando HTML, CSS, Bootstrap 5 y JavaScript, con diseño responsive y foco en experiencia de usuario.", 
+        imagen: "/assets/img/ivana/proyectos/tienda.png" 
+      },
+      {
+        titulo: "Sistema de Gestión de Familias",
+        descripcion: "Aplicación desarrollada con Java, Spring Boot y MySQL para administración de familias asistidas.",
+        imagen: "/assets/img/ivana/proyectos/java-springboot.jpg"
+      },
+      { 
+        titulo: "API REST dockerizada", 
+        descripcion: "Transformación del 'Sistema de Gestión de Familias' en una API REST en Java con Spring Boot, con operaciones CRUD, persistencia en MySQL y despliegue mediante Docker.", 
+        imagen: "/assets/img/ivana/proyectos/proyecto-api.jpg" 
+      },
+      
     ],
     peliculasFavoritas: [
       { titulo: "Coherence (2013)", imagen: "/assets/img/ivana/movies/coherence-poster.jpg" },

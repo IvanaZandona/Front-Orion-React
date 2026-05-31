@@ -1,7 +1,7 @@
 .project-carousel-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 12px;
@@ -27,7 +27,7 @@
 
 .carousel-slide img {
   width: 100%;
-  height: 250px;
+  height: 340px;
   object-fit: cover;
   display: block;
 }
@@ -37,8 +37,24 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 1rem 1rem;
-  background: linear-gradient(to top, rgba(11, 7, 26, 0.9) 0%, transparent 100%);
+  padding: 1.2rem 1rem;
+  /* background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 0.4) 70%,
+    transparent 100%
+  ); */
+  background: rgba(5, 5, 15, 0.88);
+  border: 1px solid rgba(199, 125, 255, 0.25);
+  clip-path: polygon(
+    0 0,
+    62% 0,
+    68% 18%,
+    100% 18%,
+    100% 100%,
+    0 100%
+  );
   color: snow;
 }
 
@@ -46,13 +62,31 @@
   margin: 0 0 0.5rem 0;
   color: var(--color-ligthblue);
   font-family: 'Michroma', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.9),
+    0 0 20px rgba(0,0,0,0.7);
+}
+
+.slide-content h3::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 1px;
+  margin: 6px 0 12px 0;
+  background: var(--color-ligthblue);
+  box-shadow: 0 0 10px var(--color-ligthblue);
 }
 
 .slide-content p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
   color: #ddd;
+  text-shadow:
+    0 0 6px rgba(0,0,0,1),
+    0 0 12px rgba(0,0,0,0.9);
 }
 
 .carousel-btn {
@@ -109,4 +143,91 @@
 .indicator.active {
   background: var(--color-ligthblue);
   box-shadow: 0 0 5px var(--color-ligthblue);
+}
+
+@media (max-width: 768px) {
+
+  .carousel-slide img {
+    height: 280px;
+  }
+
+  .slide-content {
+    padding: 1rem 0.9rem;
+
+    clip-path: polygon(
+      0 0,
+      55% 0,
+      62% 15%,
+      100% 15%,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .slide-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .slide-content p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .project-carousel-container {
+    border-radius: 10px;
+  }
+
+  .carousel-slide img {
+    height: 220px;
+  }
+
+  .slide-content {
+    padding: 0.8rem;
+
+    clip-path: none;
+
+    background: rgba(5, 5, 15, 0.92);
+  }
+
+  .slide-content h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .slide-content h3::after {
+    width: 3rem;
+    margin: 4px 0 8px;
+  }
+
+  .slide-content p {
+    font-size: 0.8rem;
+    line-height: 1.15;
+  }
+
+  .carousel-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .carousel-btn.prev {
+    left: 5px;
+  }
+
+  .carousel-btn.next {
+    right: 5px;
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+  }
 }

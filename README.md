@@ -181,7 +181,8 @@ src/
 
 <div style="overflow:auto;">
   <img src="public/assets/img/readme/readme_perfil.png" alt="Página de perfiles" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
-  <p><strong>Página de perfiles:</strong> muestra los integrantes en tarjetas con efectos al pasar el mouse. Los datos vienen de `teamData.js` e incluyen habilidades y navegación.</p>
+  <img src="public/assets/img/readme/readme_perfil2.png" alt="Página de perfiles" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Página de perfiles:</strong> muestra los integrantes en tarjetas con efectos al pasar el mouse. Los datos vienen de `teamData.js` e incluyen habilidades, proyectos y demás.</p>
 </div>
 
 <div style="overflow:auto;">

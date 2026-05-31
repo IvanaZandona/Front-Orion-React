@@ -8,7 +8,6 @@ function SkillProgressBar({ hab }) {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    // Animación de llenado con delay corto
     setTimeout(() => {
       setWidth(hab.nivel || 0);
     }, 100);

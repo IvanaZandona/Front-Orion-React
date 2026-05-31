@@ -6,6 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 import ParticlesBackground from "../../components/Particles/ParticlesBackground";
 import './Bitacora.css';
 import bitacoraData from "../../data/bitacoraData";
+import ScrollTopBtn from "../../components/ScrollTopBtn/ScrollTopBtn";
 
 function Bitacora() {
   const [rolesAbierto, setRolesAbierto] = useState(false);
@@ -178,6 +179,7 @@ function Bitacora() {
           </div>
         </motion.div>
       </main>
+      <ScrollTopBtn />
     </div>
   );
 }

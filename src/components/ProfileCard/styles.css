@@ -619,8 +619,14 @@ body.rocket-active {
 }
 
 .skill-icon-small {
-    width: 20px;
-    height: 20px;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.skill-icon-small:hover {
+  transform: rotate(-10deg) scale(1.25);
+  filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.5));
 }
 
 .skill-percentage {

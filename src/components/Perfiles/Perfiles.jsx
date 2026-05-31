@@ -18,6 +18,7 @@ function useProfileData(id) {
     edad: member.edad || "?",
     redes: member.redes || {},
     habilidades: member.habilidades || [],
+    proyectos: member.proyectos || [],
     peliculasFavoritas: member.peliculasFavoritas || [],
     discosFavoritos: member.discosFavoritos || []
   };
