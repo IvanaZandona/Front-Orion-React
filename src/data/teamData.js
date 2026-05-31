@@ -12,10 +12,15 @@ const teamData = [
       github: "https://github.com/Ivanveliz"
     },
     habilidades: [
-      { nombre: "React.js", icono: "/assets/img/ivan/imageSkills/react.svg" },
-      { nombre: "JavaScript", icono: "/assets/img/ivan/imageSkills/js.svg" },
-      { nombre: "HTML5", icono: "/assets/img/ivan/imageSkills/html.svg" },
-      { nombre: "CSS3", icono: "/assets/img/ivan/imageSkills/css.svg" }
+      { nombre: "React.js", icono: "/assets/img/ivan/imageSkills/react.svg", nivel: 85 },
+      { nombre: "JavaScript", icono: "/assets/img/ivan/imageSkills/js.svg", nivel: 85 },
+      { nombre: "HTML5", icono: "/assets/img/ivan/imageSkills/html.svg", nivel: 90 },
+      { nombre: "CSS3", icono: "/assets/img/ivan/imageSkills/css.svg", nivel: 80 }
+    ],
+    proyectos: [
+      { titulo: "E-commerce Espacial", descripcion: "Tienda online de trajes espaciales.", imagen: "/assets/img/1.webp" },
+      { titulo: "Dashboard Orión", descripcion: "Panel de control para misiones.", imagen: "/assets/img/astronauta2.webp" },
+      { titulo: "Blog Galáctico", descripcion: "Noticias y artículos sobre el universo.", imagen: "/assets/img/1.webp" }
     ],
     peliculasFavoritas: [
       { titulo: "El Señor de los Anillos", imagen: "/assets/img/ivan/movies/tlotr.jpg" },
@@ -42,10 +47,15 @@ const teamData = [
       github: "https://github.com/mariaayelen"
     },
     habilidades: [
-      { nombre: "Figma", icono: "/assets/img/ayelen/imageSkills/figma.svg" },
-      { nombre: "SQL", icono: "/assets/img/ayelen/imageSkills/sql.svg" },
-      { nombre: "HTML", icono: "/assets/img/ayelen/imageSkills/html.svg" },
-      { nombre: "CSS", icono: "/assets/img/ayelen/imageSkills/css.svg" }
+      { nombre: "Figma", icono: "/assets/img/ayelen/imageSkills/figma.svg", nivel: 75 },
+      { nombre: "SQL", icono: "/assets/img/ayelen/imageSkills/sql.svg", nivel: 60 },
+      { nombre: "HTML", icono: "/assets/img/ayelen/imageSkills/html.svg", nivel: 85 },
+      { nombre: "CSS", icono: "/assets/img/ayelen/imageSkills/css.svg", nivel: 80 }
+    ],
+    proyectos: [
+      { titulo: "Plataforma Educativa", descripcion: "LMS para cursos de astronomía.", imagen: "/assets/img/astronauta2.webp" },
+      { titulo: "App de Constelaciones", descripcion: "Guía interactiva del cielo nocturno.", imagen: "/assets/img/1.webp" },
+      { titulo: "Juego de Trivia", descripcion: "Preguntas sobre ciencia y espacio.", imagen: "/assets/img/astronauta2.webp" }
     ],
     peliculasFavoritas: [
       { titulo: "Orgullo y Prejuicio", imagen: "/assets/img/ayelen/movies/orgullo.jpg" },
@@ -73,11 +83,16 @@ const teamData = [
       github: "https://github.com/yahirperez2899-dotcom"
     },
     habilidades: [
-      { nombre: "C#", icono: "/assets/img/yahir/imageskills/csharp.svg" },
-      { nombre: "C", icono: "/assets/img/yahir/imageskills/C_Logo.png" },
-      { nombre: "Kotlin", icono: "/assets/img/yahir/imageskills/kotlin.svg" },
-      { nombre: "Blender", icono: "/assets/img/yahir/imageskills/Blender.png" },
-      { nombre: "Adobe Photoshop", icono: "/assets/img/yahir/imageskills/photoshop.png" },
+      { nombre: "C#", icono: "/assets/img/yahir/imageskills/csharp.svg", nivel: 90 },
+      { nombre: "C", icono: "/assets/img/yahir/imageskills/C_Logo.png", nivel: 85 },
+      { nombre: "Kotlin", icono: "/assets/img/yahir/imageskills/kotlin.svg", nivel: 70 },
+      { nombre: "Blender", icono: "/assets/img/yahir/imageskills/Blender.png", nivel: 60 },
+      { nombre: "Adobe Photoshop", icono: "/assets/img/yahir/imageskills/photoshop.png", nivel: 75 },
+    ],
+    proyectos: [
+      { titulo: "Simulador de Vuelo", descripcion: "Experiencia 3D en gravedad cero.", imagen: "/assets/img/1.webp" },
+      { titulo: "API Espacial", descripcion: "Backend para datos planetarios.", imagen: "/assets/img/astronauta2.webp" },
+      { titulo: "Render Solar", descripcion: "Modelado 3D del sistema solar.", imagen: "/assets/img/1.webp" }
     ],
     peliculasFavoritas: [
       { titulo: "La Lista de Schindler", imagen: "/assets/img/yahir/imgPeli/schindler.jpg" },
@@ -107,10 +122,15 @@ const teamData = [
       github: "https://github.com/MaiiMd"
     },
     habilidades: [
-      { nombre: "Kotlin", icono: "/assets/img/maira/imageskills/kotlin.svg" },
-      { nombre: "Python", icono: "/assets/img/maira/imageskills/python.svg" },
-      { nombre: "C#", icono: "/assets/img/maira/imageskills/csharp.svg" },
-      { nombre: "SQL", icono: "/assets/img/maira/imageskills/sqlite.svg" }
+      { nombre: "Kotlin", icono: "/assets/img/maira/imageskills/kotlin.svg", nivel: 80 },
+      { nombre: "Python", icono: "/assets/img/maira/imageskills/python.svg", nivel: 75 },
+      { nombre: "C#", icono: "/assets/img/maira/imageskills/csharp.svg", nivel: 70 },
+      { nombre: "SQL", icono: "/assets/img/maira/imageskills/sqlite.svg", nivel: 85 }
+    ],
+    proyectos: [
+      { titulo: "Calculadora Orbital", descripcion: "Herramienta de cálculo astronómico.", imagen: "/assets/img/astronauta2.webp" },
+      { titulo: "Script de Datos", descripcion: "Análisis de telemetría de satélites.", imagen: "/assets/img/1.webp" },
+      { titulo: "App Móvil Orion", descripcion: "Aplicación complementaria para la tripulación.", imagen: "/assets/img/astronauta2.webp" }
     ],
     peliculasFavoritas: [
       { titulo: "Harry Potter y el prisionero de Azkaban", imagen: "/assets/img/maira/imgPeli/harryPotter.jpg" },
@@ -138,12 +158,17 @@ rol: "RPA and Full Stack Developer",
       github: "https://github.com/IvanaZandona"
     },
     habilidades: [
-      { nombre: "Automatización RPA", icono: "/assets/img/ivana/imageSkills/rpa.svg" },
-      { nombre: "Java", icono: "/assets/img/ivana/imageSkills/java.svg" },
-      { nombre: "MySQL", icono: "/assets/img/ivana/imageSkills/mysql.svg" },
-      { nombre: "C#", icono: "/assets/img/ivana/imageSkills/csharp.svg" },
-      { nombre: "HTML", icono: "/assets/img/ivana/imageSkills/html.svg" },
-      { nombre: "CSS", icono: "/assets/img/ivana/imageSkills/css.svg" }
+      { nombre: "Automatización RPA", icono: "/assets/img/ivana/imageSkills/rpa.svg", nivel: 90 },
+      { nombre: "Java", icono: "/assets/img/ivana/imageSkills/java.svg", nivel: 80 },
+      { nombre: "MySQL", icono: "/assets/img/ivana/imageSkills/mysql.svg", nivel: 85 },
+      { nombre: "C#", icono: "/assets/img/ivana/imageSkills/csharp.svg", nivel: 75 },
+      { nombre: "HTML", icono: "/assets/img/ivana/imageSkills/html.svg", nivel: 95 },
+      { nombre: "CSS", icono: "/assets/img/ivana/imageSkills/css.svg", nivel: 90 }
+    ],
+    proyectos: [
+      { titulo: "Bot Explorador", descripcion: "Automatización de recolección de datos.", imagen: "/assets/img/1.webp" },
+      { titulo: "Sistema de Inventario", descripcion: "Gestión de suministros en la nave.", imagen: "/assets/img/astronauta2.webp" },
+      { titulo: "Dashboard de Energía", descripcion: "Monitoreo en tiempo real de recursos.", imagen: "/assets/img/1.webp" }
     ],
     peliculasFavoritas: [
       { titulo: "Coherence (2013)", imagen: "/assets/img/ivana/movies/coherence-poster.jpg" },

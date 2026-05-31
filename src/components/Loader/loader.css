@@ -12,7 +12,7 @@
 .ant-spinner {
   width: 42px;
   height: 42px;
-  border: 3px solid rgba(199, 125, 255, 0.2); /* Fondo sutil del círculo */
+  border: 3px solid rgba(199, 125, 255, 0.2); 
   border-top-color: var(--color-primary); /* Color principal girando */
   border-radius: 50%;
   animation: ant-spin 0.8s linear infinite;

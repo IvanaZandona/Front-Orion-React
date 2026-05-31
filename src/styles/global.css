@@ -122,7 +122,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 32px;
 }
 
 .bienvenido-pill {
@@ -175,14 +175,7 @@ p {
   color: var(--color-primary);
 }
 
-/* GRID EQUIPO - donde estan los integrantes */
-.equipo {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
-  gap: 35px;
-  margin: 80px 20px;
-  justify-content: center;
-}
+
 
 /* CARD COMPLETA */
 .card {
@@ -195,11 +188,16 @@ p {
   border: 1px solid rgba(199, 125, 255, 0.2);
   border-radius: 20px;
   padding: 30px 20px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 }
 
 .card::before {
@@ -222,9 +220,10 @@ p {
 
 .card-img {
   position: relative;
+
   width: 150px;
   height: 150px;
-  perspective: 1000px;
+
 }
 
 .card-img .face {
@@ -235,6 +234,7 @@ p {
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #8c77bb;
+ 
 
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -251,6 +251,7 @@ p {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+
 }
 
 /* astronauta visible al inicio */
@@ -300,7 +301,8 @@ p {
   box-shadow: 0 0 2px #c77dff, 0 0 5px #c77dff;
 }
 
-.btn-neon:hover {
+.btn-neon:hover,
+.card:hover .btn-neon {
   background-color: var(--color-primary);
   color: var(--color-bg);
   border-color: var(--color-primary);

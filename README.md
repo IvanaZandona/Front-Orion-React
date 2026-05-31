@@ -1,16 +1,149 @@
-# React + Vite
+# Equipo Orión - Proyecto Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Aplicación web de presentación y bitácora del Equipo Orión, desarrollada en React con Vite como trabajo práctico para la Tecnicatura en Desarrollo de Software.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+El sitio combina una estética espacial con colores oscuros, tipografías modernas, animaciones suaves y secciones interactivas para mostrar la identidad del equipo, su bitácora de desarrollo, una galería NASA y perfiles de integrantes.
 
-## React Compiler
+## Objetivos del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Mostrar la identidad del equipo en una experiencia visual moderna.
+- Documentar el proceso del desarrollo con una bitácora cronológica.
+- Incluir animaciones e interactividad manteniendo diseño responsive.
+- Aprovechar tecnologías web modernas para una aplicación SPA.
 
-## Expanding the ESLint configuration
+## Integrantes del equipo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Iván** — [GitHub](https://github.com/Ivanveliz)
+- **Maira** — [GitHub](https://github.com/MaiiMd)
+- **Ivana** — [GitHub](https://github.com/IvanaZandona)
+- **Ayelén** — [GitHub](https://github.com/mariaayelen)
+- **Yahir** — [GitHub](https://github.com/yahirperez2899-dotcom)
+
+## Tecnologías utilizadas
+
+- **React**: Biblioteca principal para construir la UI.
+- **Vite**: Herramienta de build y desarrollo rápido.
+- **React Router DOM**: Enrutamiento interno de la app.
+- **Framer Motion**: Animaciones de aparición y transiciones.
+- **tsParticles**: Fondo de partículas animadas.
+- **Font Awesome**: Íconos de navegación y UI.
+- **Yet Another React Lightbox**: Lightbox para la galería de imágenes.
+- **React Icons**: Iconos de interfaz.
+
+## Estructura principal del proyecto
+
+```bash
+src/
+├── App.jsx
+├── main.jsx
+├── components/
+│   ├── Footer/
+│   ├── HeroSection/
+│   ├── Loader/
+│   ├── NasaGallery/
+│   ├── Particles/
+│   ├── Perfiles/
+│   ├── ProfileCard/
+│   ├── ProjectCarousel/
+│   ├── ScrollTopBtn/
+ │   ├── Sidebar/
+ │   └── TeamCard/
+├── data/
+│   ├── dataPlanet.json
+│   └── teamData.js
+├── hooks/
+│   └── useRocketCursor.js
+├── layouts/
+│   └── DashboardLayout.jsx
+├── pages/
+│   ├── Bitacora/
+│   │   └── Bitacora.jsx
+│   ├── DataExplorer.jsx
+│   ├── Galeria.jsx
+│   └── Home.jsx
+├── services/
+│   └── nasaApi.js
+└── styles/
+    └── global.css
+```
+
+## Rutas principales
+
+- `/` — Página de inicio con hero y carrusel de integrantes.
+- `/bitacora` — Bitácora de desarrollo con timeline y hitos.
+- `/galeria` — Galería espacial que consume imágenes de la NASA.
+- `/explorador` — Explorador de cuerpos celestes con búsqueda y filtros.
+- `/perfiles/:id` — Perfil individual de cada integrante.
+
+## Contenido clave
+
+### `src/pages/Home.jsx`
+- Página de inicio con la sección principal y el carrusel del equipo.
+- Incluye el efecto de cursor cohete con `useRocketCursor`.
+
+### `src/pages/Bitacora/Bitacora.jsx`
+- Bitácora visual con hitos del proyecto.
+- Tarjetas expansibles, animaciones `Framer Motion`.
+
+### `src/components/NasaGallery/NasaGallery.jsx`
+- Carga imágenes de la NASA mediante API.
+- Incluye paginación y lightbox para visualización.
+
+### `src/pages/DataExplorer.jsx`
+- Explorador de planetas con búsqueda en tiempo real.
+- Muestra datos astronómicos y manejo de imágenes faltantes.
+
+### `src/components/Perfiles/Perfiles.jsx`
+- Página dinámica de perfiles según `teamData.js`.
+- Renderiza un perfil completo con habilidades, favoritos y datos del integrante.
+
+## Efectos y animaciones utilizadas
+
+- **Framer Motion**: animaciones de aparición y transición para los hitos de la bitácora y otros elementos visuales.
+- **tsParticles**: fondo de partículas animado en la sección de inicio y bitácora.
+- **useRocketCursor**: cursor personalizado con efecto de cohete que sigue el movimiento del mouse.
+- **Animaciones CSS**: hover suave en tarjetas, transiciones de color y efectos de glow/neón.
+- **Lightbox animado**: `Yet Another React Lightbox` para el visor de imágenes NASA.
+- **Movimiento de carrusel**: animación fluida en la sección de integrantes.
+
+## Cómo ejecutar el proyecto
+
+1. Instalar dependencias:
+   ```bash
+   pnpm install
+   ```
+2. Iniciar el servidor de desarrollo:
+   ```bash
+   pnpm dev
+   ```
+3. Abrir la URL que muestra Vite en el navegador.
+
+## Comandos útiles
+
+- `pnpm dev` — Inicia el servidor de desarrollo.
+- `pnpm build` — Genera la versión de producción.
+- `pnpm preview` — Sirve la build de producción localmente.
+- `pnpm lint` — Ejecuta ESLint.
+
+## Buenas prácticas del proyecto
+
+- Mantener la estructura de archivos clara: páginas en `src/pages`, componentes en `src/components`.
+- Usar rutas relativas correctas para CSS e imágenes.
+- No modificar la lógica de rutas de React Router sin validar la app.
+
+## Notas adicionales
+
+- El proyecto está diseñado como SPA con React Router.
+- La galería espacial depende de `fetchNasaImages` en `src/services/nasaApi.js`.
+- Las tarjetas de perfil se construyen con datos de `src/data/teamData.js`.
+- El diseño se basa en una estética espacial, con tonos oscuros y neón.
+
+---
+
+> Proyecto académico del Equipo Orión para la Tecnicatura en Desarrollo de Software.
+
+
+
+
