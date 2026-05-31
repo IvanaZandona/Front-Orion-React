@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import DashboardLayout from "./layouts/DashboardLayout";
 import Home from "./pages/Home";
-import Bitacora from "./pages/Bitacora";
+import Bitacora from "./pages/Bitacora/Bitacora";
 import Galeria from "./pages/Galeria";
 import Perfiles from "./components/Perfiles/Perfiles";
 import DataExplorer from "./pages/DataExplorer";
