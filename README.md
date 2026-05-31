@@ -13,6 +13,13 @@ El sitio combina una estética espacial con colores oscuros, tipografías modern
 - Incluir animaciones e interactividad manteniendo diseño responsive.
 - Aprovechar tecnologías web modernas para una aplicación SPA.
 
+## Cambios recientes
+
+- Se creó `src/data/bitacoraData.js` — los 12 hitos de la bitácora están ahora en un archivo de datos y se renderizan dinámicamente desde `src/pages/Bitacora/Bitacora.jsx`.
+- La bitácora fue refactorizada para mapear los hitos con `.map()` y alternar la posición (`hito-izq` / `hito-der`) según el índice.
+- Se reemplazó el lightbox personalizado por `yet-another-react-lightbox` con el plugin `Zoom` para una experiencia de visualización mejorada.
+- Se mantienen las animaciones con `Framer Motion`, el fondo de partículas (tsParticles) y los estados interactivos de las tarjetas.
+
 ## Integrantes del equipo
 
 - **Iván** — [GitHub](https://github.com/Ivanveliz)
@@ -52,7 +59,8 @@ src/
  │   └── TeamCard/
 ├── data/
 │   ├── dataPlanet.json
-│   └── teamData.js
+│   ├── teamData.js
+│   └── bitacoraData.js
 ├── hooks/
 │   └── useRocketCursor.js
 ├── layouts/
@@ -105,8 +113,35 @@ src/
 - **tsParticles**: fondo de partículas animado en la sección de inicio y bitácora.
 - **useRocketCursor**: cursor personalizado con efecto de cohete que sigue el movimiento del mouse.
 - **Animaciones CSS**: hover suave en tarjetas, transiciones de color y efectos de glow/neón.
-- **Lightbox animado**: `Yet Another React Lightbox` para el visor de imágenes NASA.
+- **Lightbox animado**: `Yet Another React Lightbox` para el visor de imágenes NASA y la bitácora.
 - **Movimiento de carrusel**: animación fluida en la sección de integrantes.
+
+### Paleta de Colores
+
+- `#000000` — Fondo principal oscuro.
+- `#ffffff` — Texto principal.
+- `#10092b` — Fondo de tarjetas y secciones profundas.
+- `#1a0f3a` — Paneles secundarios y áreas de contenido.
+- `#c77dff` — Neón primario para acentos y títulos.
+- `#00f0ff` — Neón secundario para efectos de interacción.
+- `#e4e4e7` — Texto claro y estados activos.
+- `#52525b` — Texto secundario suave.
+
+## Tipografías
+
+- **Michroma** — utilizada en títulos, encabezados y botones clave para una estética futurista.
+- **Montserrat** — utilizada en texto general, párrafos y botones secundarios para legibilidad.
+
+### Funcionalidades implementadas en js o animaciones
+
+- Cursor personalizado con efecto de cohete y seguimiento del mouse en la página principal.
+- Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
+- Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
+- Galería NASA con lightbox interactivo y paginación.
+- Buscador en tiempo real en el explorador de cuerpos celestes.
+- Menú lateral responsive con submenú desplegable de perfiles.
+- Animaciones de hover y glow en tarjetas, botones e íconos.
+- Navegación de perfiles dinámica basada en `teamData.js`.
 
 ## Cómo ejecutar el proyecto
 
