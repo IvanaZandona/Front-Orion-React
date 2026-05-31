@@ -136,36 +136,15 @@ src/
 ### Funcionalidades implementadas en js o animaciones
 
 - Cursor personalizado con efecto de cohete y seguimiento del mouse en la página principal. También se agregó una sección principal con carrusel de equipo y botón de inicio del recorrido que activa el cohete.
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/14bbe5b8-6743-4fe7-9514-a176093415eb" width="400" />
-</p> 
-
 - Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
- <p align="left">
-  <img src="https://github.com/user-attachments/assets/ccdb43a1-ef8b-4b3b-93db-9f9878c596d1" width="400" />
-</p> 
-
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
-<p align="left">
- <img alt="image" src="https://github.com/user-attachments/assets/c6257536-f096-47e0-9f6a-52de0c947e76" width="400" />
-</p>
 - Buscador en tiempo real en el explorador de cuerpos celestes.
- <p align="left">
-<img alt="image" src="https://github.com/user-attachments/assets/2db12b1e-c7e3-4200-9c5d-047859e1d85c" width="400" />
-</p> 
-
 - Menú lateral responsive con submenú desplegable de perfiles.
- <p align="left">
-  <img alt="image" src="https://github.com/user-attachments/assets/0bb80ea6-896b-4dad-931e-4fd683ae1caf" width="200" />
-</p> 
-
 - Animaciones de hover y glow en tarjetas, botones e íconos.
 - Navegación de perfiles dinámica basada en `teamData.js`. En la sección de perfiles también se agregó el apartado de habilidades con barras de progreso. Se mantuvieron los efectos de fondo en las tarjetas de perfil y el efecto de iluminación en los botones e íconos al pasar el mouse.
- <p align="left">
-<img alt="image" src="https://github.com/user-attachments/assets/b68e06c0-4fa0-4898-b42c-5a4958f5a632" width="400"/>
-</p> 
-## Cómo ejecutar el proyecto
+
+### Cómo ejecutar el proyecto
 
 1. Instalar dependencias:
    ```bash
@@ -177,7 +156,7 @@ src/
    ```
 3. Abrir la URL que muestra Vite en el navegador.
 
-## Comandos útiles
+### Comandos útiles
 
 - `pnpm dev` — Inicia el servidor de desarrollo.
 - `pnpm build` — Genera la versión de producción.
@@ -212,11 +191,26 @@ src/
   <p><strong>Página galería:</strong> muestra imágenes del espacio de la NASA. Tiene paginación, consumo de API y opción de ver las imágenes en grande.</p>
 </div>
 
+Muchos de los efectos visuales, animaciones y algunas soluciones de código utilizadas en el proyecto están basados en desarrollos previos realizados por integrantes del equipo y en recursos de consulta encontrados en internet, como tutoriales, ejemplos y material educativo. Estos recursos fueron analizados, adaptados y modificados para ajustarlos a la temática, estética y necesidades específicas de este proyecto. Como referencia e inspiración para algunos efectos interactivos, también se consultaron ejemplos disponibles en Free Frontend – JavaScript Code Examples. El resultado final integra dichas ideas con modificaciones y desarrollos propios realizados durante la construcción del sitio.
+
 ## Uso de IA en el proyecto
 
-- La IA ayudó a proponer e implementar animaciones y efectos visuales.
-- Se utilizó para sugerir correcciones de código y mejorar el manejo de errores.
-- La IA aportó una base estructural para el README, y el equipo completó y adaptó el contenido final.
+Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial como apoyo en distintas etapas del trabajo, principalmente durante la migración del proyecto a React y la adaptación de efectos visuales y animaciones.
+
+Herramientas utilizadas
+- ChatGPT
+- Copilot
+- Google Gemini
+
+Aplicaciones
+- Ayuda en la migración de componentes, efectos y animaciones a React.
+- Propuestas e implementación de animaciones y efectos visuales.
+- Sugerencias para la corrección y optimización de código.
+- Apoyo en la detección y resolución de errores durante el desarrollo.
+- Asistencia en la organización de archivos, estructura de carpetas.
+- Generación de una base estructural para la documentación del proyecto (README), la cual fue posteriormente completada, revisada y adaptada por los integrantes del equipo.
+
+Todas las sugerencias proporcionadas por estas herramientas fueron evaluadas, modificadas y adaptadas según las necesidades del proyecto antes de su incorporación al desarrollo final.
 
 ## Notas adicionales
 
@@ -225,9 +219,10 @@ src/
 - Las tarjetas de perfil se construyen con datos de `src/data/teamData.js`.
 - El diseño se basa en una estética espacial, con tonos oscuros y neón.
 
+
 ---
 
-> Proyecto académico del Equipo Orión para la Tecnicatura en Desarrollo de Software.
+> Proyecto del Equipo Orión para la Tecnicatura en Desarrollo de Software.
 
 
 
