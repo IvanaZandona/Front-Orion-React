@@ -103,6 +103,7 @@ src/
 ### `src/pages/DataExplorer.jsx`
 - Explorador de planetas con búsqueda en tiempo real.
 - Muestra datos astronómicos y manejo de imágenes faltantes.
+- Efecto de Enfoque Cinemático (Hover planetario): implementación de transiciones fluidas en las propiedades background-size y background-position
 
 ### `src/components/Perfiles/Perfiles.jsx`
 - Página dinámica de perfiles según `teamData.js`.
@@ -116,6 +117,7 @@ src/
 - **Animaciones CSS**: hover suave en tarjetas, transiciones de color y efectos de glow/neón.
 - **Lightbox animado**: `Yet Another React Lightbox` para el visor de imágenes NASA y la bitácora.
 - **Movimiento de carrusel**: animación fluida en la sección de integrantes.
+- **Enfoque Cinemático(Hover)**: transición elástica de escala y posición de fondo (background-size y background-position) al interactuar con las tarjetas del Explorador de Cuerpos Celestes.
 
 ### Paleta de Colores
 
@@ -139,20 +141,13 @@ src/
 - Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
 - Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
 - Galería NASA con lightbox interactivo y paginación.
-<<<<<<< Updated upstream
 - Buscador en tiempo real en el explorador de cuerpos celestes.
-=======
-- Buscador en tiempo real en el explorador de cuerpos celestes
->>>>>>> Stashed changes
+- Efecto de enfoque cinemático planetario (Hover) en el explorador de cuerpos celestes, aplicando transiciones fluidas de escala y posición de fondo (background-size y background-position) al interactuar con las tarjetas de los planetas.
 - Menú lateral responsive con submenú desplegable de perfiles.
 - Animaciones de hover y glow en tarjetas, botones e íconos.
 - Navegación de perfiles dinámica basada en `teamData.js`. En la sección de perfiles también se agregó el apartado de habilidades con barras de progreso. Se mantuvieron los efectos de fondo en las tarjetas de perfil y el efecto de iluminación en los botones e íconos al pasar el mouse.
 
-<<<<<<< Updated upstream
 ### Cómo ejecutar el proyecto
-=======
-## Cómo ejecutar el proyecto
->>>>>>> Stashed changes
 
 1. Instalar dependencias:
    ```bash
