@@ -66,7 +66,9 @@ const teamData = [
     discosFavoritos: [
       { titulo: "Arirang", imagen: "/assets/img/ayelen/discos/arirang.png" },
       { titulo: "Rata Blanca", imagen: "/assets/img/ayelen/discos/rata-blanca.png" },
-      { titulo: "The Most Beautiful Moment in Life: Young Forever", imagen: "/assets/img/ayelen/discos/young.png" }
+      { titulo: "The Most Beautiful Moment in Life: Young Forever", imagen: "/assets/img/ayelen/discos/young.png" },
+      { titulo: "Safe and Sound", imagen: "/assets/img/maira/music/safesound.jpg" }
+
     ],
  
   },

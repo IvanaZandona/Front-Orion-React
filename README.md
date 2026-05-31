@@ -14,6 +14,13 @@ El sitio combina una estética espacial con colores oscuros, tipografías modern
 - Incluir animaciones e interactividad manteniendo diseño responsive.
 - Aprovechar tecnologías web modernas para una aplicación SPA.
 
+## Cambios recientes
+
+- Se creó `src/data/bitacoraData.js` — los 12 hitos de la bitácora están ahora en un archivo de datos y se renderizan dinámicamente desde `src/pages/Bitacora/Bitacora.jsx`.
+- La bitácora fue refactorizada para mapear los hitos con `.map()` y alternar la posición (`hito-izq` / `hito-der`) según el índice.
+- Se reemplazó el lightbox personalizado por `yet-another-react-lightbox` con el plugin `Zoom` para una experiencia de visualización mejorada.
+- Se mantienen las animaciones con `Framer Motion`, el fondo de partículas (tsParticles) y los estados interactivos de las tarjetas.
+
 ## Integrantes del equipo
 
 - **Iván** — [GitHub](https://github.com/Ivanveliz)
@@ -53,7 +60,8 @@ src/
  │   └── TeamCard/
 ├── data/
 │   ├── dataPlanet.json
-│   └── teamData.js
+│   ├── teamData.js
+│   └── bitacoraData.js
 ├── hooks/
 │   └── useRocketCursor.js
 ├── layouts/
@@ -106,9 +114,57 @@ src/
 - **tsParticles**: fondo de partículas animado en la sección de inicio y bitácora.
 - **useRocketCursor**: cursor personalizado con efecto de cohete que sigue el movimiento del mouse.
 - **Animaciones CSS**: hover suave en tarjetas, transiciones de color y efectos de glow/neón.
-- **Lightbox animado**: `Yet Another React Lightbox` para el visor de imágenes NASA.
+- **Lightbox animado**: `Yet Another React Lightbox` para el visor de imágenes NASA y la bitácora.
 - **Movimiento de carrusel**: animación fluida en la sección de integrantes.
 
+### Paleta de Colores
+
+- `#000000` — Fondo principal oscuro.
+- `#ffffff` — Texto principal.
+- `#10092b` — Fondo de tarjetas y secciones profundas.
+- `#1a0f3a` — Paneles secundarios y áreas de contenido.
+- `#c77dff` — Neón primario para acentos y títulos.
+- `#00f0ff` — Neón secundario para efectos de interacción.
+- `#e4e4e7` — Texto claro y estados activos.
+- `#52525b` — Texto secundario suave.
+
+## Tipografías
+
+- **Michroma** — utilizada en títulos, encabezados y botones clave para una estética futurista.
+- **Montserrat** — utilizada en texto general, párrafos y botones secundarios para legibilidad.
+
+### Funcionalidades implementadas en js o animaciones
+
+- Cursor personalizado con efecto de cohete y seguimiento del mouse en la página principal. También se agregó una sección principal con carrusel de equipo y botón de inicio del recorrido que activa el cohete.
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/14bbe5b8-6743-4fe7-9514-a176093415eb" width="400" />
+</p> 
+
+- Transiciones de scroll y aparición de componentes con `Framer Motion` en la bitácora y la tarjeta "Próximamente".
+ <p align="left">
+  <img src="https://github.com/user-attachments/assets/ccdb43a1-ef8b-4b3b-93db-9f9878c596d1" width="400" />
+</p> 
+
+- Fondo animado de partículas en el inicio y la bitácora con `tsParticles`.
+- Galería NASA con lightbox interactivo y paginación.
+<p align="left">
+ <img alt="image" src="https://github.com/user-attachments/assets/c6257536-f096-47e0-9f6a-52de0c947e76" width="400" />
+</p>
+- Buscador en tiempo real en el explorador de cuerpos celestes.
+ <p align="left">
+<img alt="image" src="https://github.com/user-attachments/assets/2db12b1e-c7e3-4200-9c5d-047859e1d85c" width="400" />
+</p> 
+
+- Menú lateral responsive con submenú desplegable de perfiles.
+ <p align="left">
+  <img alt="image" src="https://github.com/user-attachments/assets/0bb80ea6-896b-4dad-931e-4fd683ae1caf" width="200" />
+</p> 
+
+- Animaciones de hover y glow en tarjetas, botones e íconos.
+- Navegación de perfiles dinámica basada en `teamData.js`. En la sección de perfiles también se agregó el apartado de habilidades con barras de progreso. Se mantuvieron los efectos de fondo en las tarjetas de perfil y el efecto de iluminación en los botones e íconos al pasar el mouse.
+ <p align="left">
+<img alt="image" src="https://github.com/user-attachments/assets/b68e06c0-4fa0-4898-b42c-5a4958f5a632" width="400"/>
+</p> 
 ## Cómo ejecutar el proyecto
 
 1. Instalar dependencias:
@@ -155,6 +211,12 @@ src/
   <img src="public/assets/img/readme/readme_galeria.png" alt="Página galería" width="400" style="float:left; margin-right:24px; margin-bottom:16px;" />
   <p><strong>Página galería:</strong> muestra imágenes del espacio de la NASA. Tiene paginación, consumo de API y opción de ver las imágenes en grande.</p>
 </div>
+
+## Uso de IA en el proyecto
+
+- La IA ayudó a proponer e implementar animaciones y efectos visuales.
+- Se utilizó para sugerir correcciones de código y mejorar el manejo de errores.
+- La IA aportó una base estructural para el README, y el equipo completó y adaptó el contenido final.
 
 ## Notas adicionales
 
