@@ -189,6 +189,12 @@ src/
 - Usar rutas relativas correctas para CSS e imágenes.
 - No modificar la lógica de rutas de React Router sin validar la app.
 
+## Uso de IA en el proyecto
+
+- La IA ayudó a proponer e implementar animaciones y efectos visuales.
+- Se utilizó para sugerir correcciones de código y mejorar el manejo de errores.
+- La IA aportó una base estructural para el README, y el equipo completó y adaptó el contenido final.
+
 ## Notas adicionales
 
 - El proyecto está diseñado como SPA con React Router.
