@@ -1,4 +1,3 @@
-
 .body-bitacora {
   background: radial-gradient(circle at center, var(--color-card-dark), var(--color-bg));
   color: var(--color-text);
@@ -46,6 +45,7 @@
   position: relative;
   box-sizing: border-box;
 }
+
 .seccion-bifurcacion::before {
   content: '';
   position: absolute;
@@ -80,6 +80,7 @@
   z-index: 10;
   box-shadow: 0 0 8px #c77dff, 0 0 20px #c77dff, 0 0 40px rgba(199, 125, 255, 0.4);
 }
+
 /*  TARJETAS SUPERIORES */
 
 .tarjeta-circuito {
@@ -92,14 +93,13 @@
   flex-direction: column;
   box-sizing: border-box;
   z-index: 2;
-  
   padding: 25px;
-  max-height: 120px; 
+  max-height: 120px;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
 
 .tarjeta-circuito.tarjeta-abierta {
-  max-height: 600px; 
+  max-height: 600px;
 }
 
 .circuito-roles {
@@ -133,14 +133,14 @@
   font-weight: 600;
   letter-spacing: 1px;
   margin: 0 0 8px 0;
-  color: #71717a; 
+  color: #71717a;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .encabezado-circuito p {
   margin: 0;
   font-size: 12px;
-  color: #52525b; 
+  color: #52525b;
   line-height: 1.4;
   transition: color 0.3s ease;
 }
@@ -171,8 +171,6 @@
   grid-template-rows: repeat(5, 1fr);
   opacity: 0;
   transition: opacity 0.4s ease;
-  
- 
   mask-image: radial-gradient(circle 130px at var(--mouse-x, 0px) var(--mouse-y, 0px), black 20%, transparent 80%);
   -webkit-mask-image: radial-gradient(circle 130px at var(--mouse-x, 0px) var(--mouse-y, 0px), black 20%, transparent 80%);
 }
@@ -246,9 +244,8 @@
   font-weight: bold;
   color: #71717a;
   width: 25%;
-  padding-left: 10px; 
+  padding-left: 10px;
 }
-
 
 .info-gitflow {
   font-size: 13px;
@@ -256,7 +253,7 @@
   color: #71717a;
   margin-top: 20px;
   border-top: 1px dashed rgba(0, 240, 255, 0.3);
-  padding: 20px 10px 0 10px; 
+  padding: 20px 10px 0 10px;
   transition: color 0.25s ease, border-color 0.25s ease;
 }
 
@@ -287,16 +284,6 @@
   transition: color 0.25s ease;
 }
 
-.tarjeta-circuito .tabla-tripulacion,
-.tarjeta-circuito .tabla-tripulacion td,
-.tarjeta-circuito .tabla-tripulacion td:first-child,
-.tarjeta-circuito .info-gitflow,
-.tarjeta-circuito .info-gitflow li,
-.tarjeta-circuito .info-gitflow li::before,
-.tarjeta-circuito .info-gitflow li strong {
-  transition: color 0.25s ease, border-color 0.25s ease;
-}
-
 /* HOVER: roles tarjeta (Lila) */
 .circuito-roles:hover .tabla-tripulacion,
 .circuito-roles:hover .tabla-tripulacion td {
@@ -304,7 +291,7 @@
 }
 
 .circuito-roles:hover .tabla-tripulacion td:first-child {
-  color: #c77dff; 
+  color: #c77dff;
 }
 
 .circuito-roles:hover .encabezado-circuito p {
@@ -319,16 +306,16 @@
 }
 
 .circuito-git:hover .info-gitflow li strong {
-  color: #00f0ff; }
+  color: #00f0ff;
+}
 
 .circuito-git:hover .info-gitflow li::before {
-  color: #00f0ff; 
+  color: #00f0ff;
 }
 
 .circuito-git:hover .encabezado-circuito p {
   color: #e4e4e7;
 }
-
 
 /* CONTENEDOR DE LA LÍNEA*/
 
@@ -352,14 +339,14 @@
 }
 
 .contenedor-bitacora .btn-volver-simple {
-  display: flex;             
-  width: max-content;        
-  margin: 50px auto 0 auto; 
-  position: relative;        
-  z-index: 10;              
-  background: rgba(16, 9, 43, 0.8); 
-  padding: 10px 20px;     
-  border-radius: 20px;   
+  display: flex;
+  width: max-content;
+  margin: 50px auto 0 auto;
+  position: relative;
+  z-index: 10;
+  background: rgba(16, 9, 43, 0.8);
+  padding: 10px 20px;
+  border-radius: 20px;
   border: 1px solid rgba(199, 125, 255, 0.3);
 }
 
@@ -367,8 +354,6 @@
   border-color: var(--color-ligthblue);
   background: rgba(16, 9, 43, 1);
 }
-
-
 
 .hito {
   padding: 10px 40px;
@@ -408,10 +393,6 @@
   border-radius: 15px;
   border: 1px solid var(--color-secondary);
   backdrop-filter: blur(5px);
-}
-
-
-.hito-contenido {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -438,6 +419,7 @@
   height: auto;
   opacity: 0.95;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .bitacora-detalle .aspectos-tecnicos {
@@ -479,7 +461,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #00e5ff;
+  color: rgb(0, 229, 255);
 }
 
 .hito-texto h3 {
@@ -493,6 +475,9 @@
   line-height: 1.6;
   font-size: 18px;
   text-align: justify;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* tARJETA PRÓXIMAMENTE */
@@ -553,47 +538,21 @@
 /* EFECTO INTERACTIVO PARA LA TUERCA DE LOS HITOS */
 
 .aspectos-tecnicos-titulo .fa-gear {
-  color: transparent; 
-  -webkit-text-stroke: 1.5px #71717a; 
-  margin-right: 12px; 
+  color: transparent;
+  -webkit-text-stroke: 1.5px #71717a;
+  margin-right: 12px;
   transition: -webkit-text-stroke 0.3s ease, transform 0.4s ease, filter 0.3s ease;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .aspectos-tecnicos:hover .fa-gear {
-  -webkit-text-stroke: 1.5px #00e5ff; 
-  transform: rotate(45deg); 
-  filter: drop-shadow(0 0 4px #00e5ff); 
+  -webkit-text-stroke: 1.5px #00e5ff;
+  transform: rotate(45deg);
+  filter: drop-shadow(0 0 4px #00e5ff);
 }
-
-/* ZOOM IMAGENES */
 
 .imagen-zoomable {
   cursor: zoom-in;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-
-/*RESPONSIVE BITÁCORA */
-
-
-/* Regla global protectora para que el texto NUNCA rompa las tarjetas */
-
-.hito-texto p, .hito-texto h3, .info-gitflow p, .tabla-tripulacion td {
-  word-break: break-word; 
-  overflow-wrap: break-word;
-  hyphens: auto; 
-}
-
-.hito-imagen img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; 
-  border-radius: 8px; 
-}
-
-.imagen-zoomable {
-  cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -602,51 +561,38 @@
   transform: scale(1.05);
 }
 
-/* --------------------------------------------
-   1. Escritorio Grande (Máx 1200px) - ¡Agregado acá!
-   -------------------------------------------- */
+/* RESPONSIVE BITÁCORA */
+
+/*  Escritorio Grande (Máx 1200px)*/
 @media screen and (max-width: 1200px) {
   .contenedor-bitacora {
-    width: 95%; /* Le da un margen sutil a los costados en monitores medianos */
+    width: 95%;
     padding: 20px 0;
   }
-  
+
   .grid-circuitos {
     padding: 0 20px;
-    grid-gap: 20px; /* Achica un poco el espacio entre las dos tarjetas de arriba */
+    grid-gap: 20px;
   }
-  
-  /* A partir de 1200px y hacia abajo, stackear imagen encima de aspectos técnicos */
+
   .bitacora-detalle {
     flex-direction: column;
     align-items: stretch;
     gap: 16px;
   }
 
-  .bitacora-detalle .hito-imagen {
-    order: 0;
-    flex: 0 0 100%;
+  .bitacora-detalle .hito-imagen,
+  .bitacora-detalle .aspectos-tecnicos {
     width: 100%;
-    margin-bottom: 0;
-    display: block;
-    justify-content: center;
   }
 
   .bitacora-detalle .hito-imagen img {
-    width: 100%;
     max-height: 420px;
-    object-fit: cover;
-    display: block;
     margin: 0 auto;
   }
-
-  .bitacora-detalle .aspectos-tecnicos {
-    order: 1;
-    flex: 1 1 100%;
-    width: 100%;
-  }
 }
-/* Tablets (máx 900px) */
+
+/*  Tablets (Máx 900px)  */
 @media screen and (max-width: 900px) {
   .grid-circuitos {
     grid-template-columns: 1fr;
@@ -654,9 +600,7 @@
   }
 
   .seccion-bifurcacion::before,
-  .seccion-bifurcacion::after {
-    display: none;
-  }
+  .seccion-bifurcacion::after,
   .nodo-central {
     display: none;
   }
@@ -669,34 +613,8 @@
     font-size: 15px;
   }
 
-  /* For responsive: stack image above technical aspects */
-  .bitacora-detalle {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 16px;
-  }
-
-  .bitacora-detalle .hito-imagen {
-    order: 0;
-    flex: 0 0 100%;
-    width: 100%;
-    margin-bottom: 0;
-    display: block;
-    justify-content: center;
-  }
-
   .bitacora-detalle .hito-imagen img {
-    width: 100%;
     max-height: 350px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .bitacora-detalle .aspectos-tecnicos {
-    order: 1;
-    flex: 1 1 100%;
-    width: 100%;
   }
 
   .card-bitacora {
@@ -704,9 +622,23 @@
   }
 }
 
-/* Móviles (máx 400px) */
-@media screen and (max-width: 400px) {
+/* Celulares Estándar (Máx 600px)  */
+@media screen and (max-width: 600px) {
+  .hero-bitacora {
+    padding-top: 90px;
+  }
 
+  .hito-texto p {
+    text-align: left;
+  }
+
+  .tabla-tripulacion {
+    font-size: 12px;
+  }
+}
+
+/* Celulares Minis (Máx 400px) */
+@media screen and (max-width: 400px) {
   .hero-bitacora {
     padding-top: 80px;
   }
@@ -727,5 +659,7 @@
     font-size: 14px;
   }
 
-  
+  .bitacora-detalle .hito-imagen img {
+    max-height: 220px;
+  }
 }

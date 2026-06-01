@@ -233,6 +233,21 @@ App (Componente Raíz)
 
 Muchos de los efectos visuales, animaciones y algunas soluciones de código utilizadas en el proyecto están basados en desarrollos previos realizados por integrantes del equipo y en recursos de consulta encontrados en internet, como tutoriales, ejemplos y material educativo. Estos recursos fueron analizados, adaptados y modificados para ajustarlos a la temática, estética y necesidades específicas de este proyecto. Como referencia e inspiración para algunos efectos interactivos, también se consultaron ejemplos disponibles en Free Frontend – JavaScript Code Examples. El resultado final integra dichas ideas con modificaciones y desarrollos propios realizados durante la construcción del sitio.
 
+## Organización del trabajo y control de versiones
+
+Para esta entrega utilizamos Trello para organizar las tareas del equipo. Como era la primera vez que trabajábamos con esta herramienta, nos resultó interesante aprender a distribuir actividades, hacer seguimiento del avance y coordinarnos mejor durante el desarrollo del proyecto.
+
+A través del tablero fuimos asignando responsabilidades, registrando tareas terminadas, en proceso y pendientes, lo que nos ayudó a mantener una mejor organización del trabajo.
+<div style="overflow:auto;">
+  <img src="public/assets/img/readme/readme_trello.png" alt="Trello" width="300" style="float:left; margin-right:24px; margin-bottom:16px;" />
+  <p><strong>Tablero Trello</strong></p>
+</div>
+
+
+En cuanto al control de versiones, trabajamos con Git y GitHub, utilizando distintas ramas para desarrollar funcionalidades de manera colaborativa. Si bien no llegamos a implementar completamente una metodología GitFlow, principalmente por estar en proceso de aprendizaje y adaptación a estas herramientas, esta experiencia nos permitió comprender mejor la importancia de trabajar con ramas, gestionar cambios y resolver conflictos de integración.
+
+Como mejora a futuro, nos proponemos incorporar de forma más completa este flujo de trabajo y otras buenas prácticas de desarrollo colaborativo para mantener una estructura más ordenada y escalable del proyecto.
+
 ## Uso de IA en el proyecto
 
 Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial como apoyo en distintas etapas del trabajo, principalmente durante la migración del proyecto a React y la adaptación de efectos visuales y animaciones.

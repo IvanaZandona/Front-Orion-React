@@ -54,10 +54,12 @@ const teamData = [
       { nombre: "CSS", icono: "/assets/img/ayelen/imageSkills/css.svg", nivel: 80 }
     ],
     proyectos: [
-      { titulo: "Plataforma Educativa", descripcion: "LMS para cursos de astronomía.", imagen: "/assets/img/astronauta2.webp" },
-      { titulo: "App de Constelaciones", descripcion: "Guía interactiva del cielo nocturno.", imagen: "/assets/img/1.webp" },
-      { titulo: "Juego de Trivia", descripcion: "Preguntas sobre ciencia y espacio.", imagen: "/assets/img/astronauta2.webp" }
+      { titulo: "Swarm - Sistema de Riego IoT", descripcion: "Prototipo IoT desarrollado con Node-RED y MQTT para monitorear cultivos y automatizar el riego mediante sensores y actuadores.", imagen: "/assets/img/ayelen/proyectos/swarm.png" },
+      { titulo: "Prototipo de app móvil", descripcion: "Diseñada en Android para gestionar un club deportivo.", imagen: "/assets/img/ayelen/proyectos/prototipo_app.png" },
+      { titulo: "Sitio web", descripcion: "Desarrollado con HTML, CSS y JavaScript con consumo de una API REST de anime", imagen: "/assets/img/ayelen/proyectos/proyecto_anime.png" },
+      { titulo: "Prototipo de página educativa", descripcion: "Desarrollada como recurso interactivo para explorar distintos géneros y instrumentos musicales", imagen: "/assets/img/ayelen/proyectos/proyecto_edu.png" }
     ],
+    
     peliculasFavoritas: [
       { titulo: "Orgullo y Prejuicio", imagen: "/assets/img/ayelen/movies/orgullo.jpg" },
       { titulo: "El viaje de Chihiro", imagen: "/assets/img/ayelen/movies/chihiro.jpg" },
