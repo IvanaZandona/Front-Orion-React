@@ -18,9 +18,10 @@ const teamData = [
       { nombre: "CSS3", icono: "/assets/img/ivan/imageSkills/css.svg", nivel: 80 }
     ],
     proyectos: [
-      { titulo: "E-commerce Espacial", descripcion: "Tienda online de trajes espaciales.", imagen: "/assets/img/1.webp" },
-      { titulo: "Dashboard Orión", descripcion: "Panel de control para misiones.", imagen: "/assets/img/astronauta2.webp" },
-      { titulo: "Blog Galáctico", descripcion: "Noticias y artículos sobre el universo.", imagen: "/assets/img/1.webp" }
+   
+      { titulo: "Tabata Spa", descripcion: "Plataforma de entrenamiento .", imagen: "/assets/img/ivan/proyectos/tabata.png" },
+      { titulo: "Landing Page E-commerce", descripcion: "Diseño optimizado para alta conversión de ventas.", imagen: "/assets/img/ivan/proyectos/ecommerce.png" },
+      { titulo: "App de Productividad", descripcion: "Gestor de tareas y organización de misiones diarias.", imagen: "/assets/img/ivan/proyectos/productividad.png" }
     ],
     peliculasFavoritas: [
       { titulo: "El Señor de los Anillos", imagen: "/assets/img/ivan/movies/tlotr.jpg" },

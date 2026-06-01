@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { FaHome, FaBook, FaUsers, FaBars, FaTimes, FaImages, FaChevronDown, FaChevronUp, FaGithub, FaDiscord, FaGlobe } from "react-icons/fa";
+import { FaHome, FaBook, FaUsers, FaBars, FaTimes, FaImages, FaChevronDown, FaChevronUp, FaGithub, FaDiscord, FaGlobe, FaSitemap } from "react-icons/fa";
 import teamData from "../../data/teamData";
 import "./sidebar.css";
 
@@ -44,6 +44,11 @@ function Sidebar() {
           <NavLink to="/explorador" className="nav-item" onClick={closeMenu}>
             <FaGlobe />
             <span>Explorador De planetas</span>
+          </NavLink>
+
+          <NavLink to="/arbol" className="nav-item" onClick={closeMenu}>
+            <FaSitemap />
+            <span>Árbol de Render</span>
           </NavLink>
 
           {/* Menú Desplegable de Perfiles */}

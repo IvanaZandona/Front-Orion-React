@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaImage } from "react-icons/fa";
-import dataPlanet from '../data/dataPlanet.json';
-import ScrollTopBtn from '../components/ScrollTopBtn/ScrollTopBtn';
+import dataPlanet from '../../data/dataPlanet.json';
+import ScrollTopBtn from '../../components/ScrollTopBtn/ScrollTopBtn';
 import './dataExplorer.css';
 
 function DataExplorer() {

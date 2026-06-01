@@ -78,6 +78,40 @@ src/
     └── global.css
 ```
 
+## Árbol de Renderizado (Render Tree)
+
+A continuación se presenta la representación gráfica de la estructura jerárquica de componentes de la aplicación. Se identifica claramente el componente raíz (`App`), el layout superior de navegación y cómo se desglosan los componentes hijos principales:
+
+```text
+App (Componente Raíz)
+ └── BrowserRouter (Contexto de Enrutamiento)
+      └── Routes
+           └── Route (DashboardLayout - Nivel Superior)
+                ├── Sidebar (Navegación lateral dinámica)
+                └── Outlet (Contenedor dinámico de páginas)
+                     │
+                     ├── Home (Página Principal)
+                     │    ├── useRocketCursor (Hook Custom)
+                     │    ├── HeroSection (Cabecera y título)
+                     │    └── TeamCarousel (Carrusel de integrantes)
+                     │         └── TeamCard (Tarjeta interactiva con ruteo)
+                     │
+                     ├── Bitacora (Página de Progreso)
+                     │    └── Tarjetas de hitos cronológicos (Framer Motion)
+                     │
+                     ├── Galeria (Página de Galería NASA)
+                     │    └── NasaGallery (Grilla de imágenes APOD)
+                     │         └── Loader (Spinner de carga)
+                     │
+                     ├── Perfiles (Página de Detalle de Tripulante)
+                     │    └── ProfileCard (Layout de información)
+                     │         ├── SkillProgressBar (Barras animadas)
+                     │         └── ProjectCarousel (Carrusel de proyectos personales)
+                     │
+                     └── DataExplorer (Página Explorador Espacial)
+                          └── Resultados de búsqueda (Tarjetas con Hover Cinemático)
+```
+
 ## Rutas principales
 
 - `/` — Página de inicio con hero y carrusel de integrantes.
