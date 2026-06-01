@@ -88,11 +88,11 @@ const teamData = [
       github: "https://github.com/yahirperez2899-dotcom"
     },
     habilidades: [
-      { nombre: "C#", icono: "/assets/img/yahir/imageskills/csharp.svg", nivel: 90 },
-      { nombre: "C", icono: "/assets/img/yahir/imageskills/C_Logo.png", nivel: 85 },
-      { nombre: "Kotlin", icono: "/assets/img/yahir/imageskills/kotlin.svg", nivel: 70 },
-      { nombre: "Blender", icono: "/assets/img/yahir/imageskills/Blender.png", nivel: 60 },
-      { nombre: "Adobe Photoshop", icono: "/assets/img/yahir/imageskills/photoshop.png", nivel: 75 },
+      { nombre: "C#", icono: "/assets/img/yahir/imageskills/csharp.svg", nivel: 85 },
+      { nombre: "C", icono: "/assets/img/yahir/imageskills/C_Logo.png", nivel: 80 },
+      { nombre: "Kotlin", icono: "/assets/img/yahir/imageskills/kotlin.svg", nivel: 65 },
+      { nombre: "Blender", icono: "/assets/img/yahir/imageskills/Blender.png", nivel: 70 },
+      { nombre: "Adobe Photoshop", icono: "/assets/img/yahir/imageskills/photoshop.png", nivel: 85 },
     ],
     proyectos: [
       { titulo: "Videojuego (En proceso)", descripcion: "Videojuego de naves frenetico estilo retro (aun en proceso) utilizando C, GML y C# para algunas funciones", imagen: "/assets/img/yahir/proyectos/game.png" },
