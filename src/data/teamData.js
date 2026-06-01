@@ -95,9 +95,9 @@ const teamData = [
       { nombre: "Adobe Photoshop", icono: "/assets/img/yahir/imageskills/photoshop.png", nivel: 75 },
     ],
     proyectos: [
-      { titulo: "Simulador de Vuelo", descripcion: "Experiencia 3D en gravedad cero.", imagen: "/assets/img/1.webp" },
-      { titulo: "API Espacial", descripcion: "Backend para datos planetarios.", imagen: "/assets/img/astronauta2.webp" },
-      { titulo: "Render Solar", descripcion: "Modelado 3D del sistema solar.", imagen: "/assets/img/1.webp" }
+      { titulo: "Videojuego (En proceso)", descripcion: "Videojuego de naves frenetico estilo retro (aun en proceso) utilizando C, GML y C# para algunas funciones", imagen: "/assets/img/yahir/proyectos/game.png" },
+      { titulo: "Pagina de idiomas", descripcion: "Sitio web de aprendizaje de idiomas, desarrollado con HTML y JavaScript", imagen: "/assets/img/yahir/proyectos/idioma.PNG" },
+      { titulo: "App de Entrenamiento", descripcion: "App para celular hecha con Kotlin para rutinas de gym", imagen: "/assets/img/yahir/proyectos/gym.png" }
     ],
     peliculasFavoritas: [
       { titulo: "La Lista de Schindler", imagen: "/assets/img/yahir/imgPeli/schindler.jpg" },
