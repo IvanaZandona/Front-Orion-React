@@ -133,9 +133,9 @@ const teamData = [
       { nombre: "SQL", icono: "/assets/img/maira/imageskills/sqlite.svg", nivel: 85 }
     ],
     proyectos: [
-      { titulo: "Calculadora Orbital", descripcion: "Herramienta de cálculo astronómico.", imagen: "/assets/img/astronauta2.webp" },
-      { titulo: "Script de Datos", descripcion: "Análisis de telemetría de satélites.", imagen: "/assets/img/1.webp" },
-      { titulo: "App Móvil Orion", descripcion: "Aplicación complementaria para la tripulación.", imagen: "/assets/img/astronauta2.webp" }
+      { titulo: "Sistema de Gestión Integral: Clínica SePrice", descripcion: "Plataforma diseñada para optimizar la operativa de una clínica médica, enfocada en la digitalización de procesos administrativos y clínicos.", imagen: "/assets/img/maira/proyectos/clinicaSp.png" },
+      { titulo: "App de Gestión para Club Deportivo", descripcion: "Aplicación móvil orientada a la administración ágil de socios y finanzas en entornos deportivos, diseñada para facilitar la autogestión y el control de pagos.", imagen: "/assets/img/maira/proyectos/clubD.png" },
+      { titulo: "App Móvil Orion: Explorador Astronómico", descripcion: "Plataforma interactiva que acerca la astronomía a todo público. Integra una enciclopedia espacial, alertas de efemérides en tiempo real y juegos de trivia para aprender sobre el cosmos de manera sencilla y entretenida.", imagen: "/assets/img/maira/proyectos/appOrion.png" }
     ],
     peliculasFavoritas: [
       { titulo: "Harry Potter y el prisionero de Azkaban", imagen: "/assets/img/maira/imgPeli/harryPotter.jpg" },
